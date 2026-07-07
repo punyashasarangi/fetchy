@@ -28,9 +28,37 @@ addCartButtons.forEach((button) => {
 
         const productPrice = productCard.querySelector(".price").innerText;
 
-        console.log(productName);
+        // Product Image
 
-        console.log(productPrice);
+        const productImage = productCard.querySelector("img").src;
+
+        // Create Product Object
+
+        const product = {
+
+            name: productName,
+
+            price: productPrice,
+
+            image: productImage
+
+        };
+
+        console.log(product);
+
+        // Get existing cart from Local Storage
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        // Add new product
+
+        cart.push(product);
+
+        // Save updated cart
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        console.log(cart);
 
         // Increase Badge
 
