@@ -1,0 +1,139 @@
+/* ================= PRODUCT PAGE ================= */
+
+.product-details-page{
+
+    padding:80px 0;
+
+    background:#f8fafc;
+
+}
+
+.product-image-box{
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.main-product-image{
+
+    max-height:350px;
+
+    object-fit:contain;
+
+}
+
+.rating{
+
+    font-size:18px;
+
+    margin-top:15px;
+
+}
+
+.product-features{
+
+    margin-top:25px;
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.product-features li{
+
+    margin-bottom:12px;
+
+    font-size:17px;
+
+}
+
+.product-details-page .btn{
+
+    border-radius:10px;
+
+}
+
+/* ================= RELATED PRODUCTS ================= */
+
+.related-products{
+
+    padding:80px 0;
+
+    background:#fff;
+
+}
+
+.related-card{
+
+    background:#f8fafc;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.related-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.related-card img{
+
+    height:180px;
+
+    object-fit:contain;
+
+    margin-bottom:20px;
+
+}
+
+.related-card h4{
+
+    font-weight:700;
+
+}
+
+.related-card p{
+
+    color:#22C55E;
+
+    font-weight:700;
+
+    font-size:20px;
+
+}
+
+.related-card .btn{
+
+    border-radius:10px;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .product-image-box{
+
+        margin-bottom:30px;
+
+    }
+
+}

@@ -1,0 +1,129 @@
+/* ================= HEADER ================= */
+
+.offer-header{
+
+    background:#f0fff4;
+
+    padding:60px 0;
+
+    text-align:center;
+
+}
+
+.offer-header h1{
+
+    font-size:45px;
+
+    font-weight:700;
+
+}
+
+.offer-header p{
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+/* ================= PAGE ================= */
+
+.offer-page{
+
+    background:#f8fafc;
+
+    padding:70px 0;
+
+}
+
+/* ================= CARD ================= */
+
+.offer-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    position:relative;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    height:100%;
+
+}
+
+.offer-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.offer-card img{
+
+    height:180px;
+
+    object-fit:contain;
+
+    margin:20px 0;
+
+}
+
+.offer-card h3{
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.offer-card p{
+
+    color:#666;
+
+    margin-bottom:20px;
+
+}
+
+.discount-badge{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    background:#ef4444;
+
+    color:#fff;
+
+    padding:8px 15px;
+
+    border-radius:25px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.offer-card .btn{
+
+    border-radius:10px;
+
+}
+
+@media(max-width:768px){
+
+    .offer-card{
+
+        margin-bottom:20px;
+
+    }
+
+}

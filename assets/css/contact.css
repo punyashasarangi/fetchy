@@ -1,0 +1,117 @@
+/* ================= HEADER ================= */
+
+.contact-header{
+
+    background:#f0fff4;
+
+    padding:60px 0;
+
+    text-align:center;
+
+}
+
+.contact-header h1{
+
+    font-size:45px;
+
+    font-weight:700;
+
+}
+
+.contact-header p{
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+/* ================= PAGE ================= */
+
+.contact-page{
+
+    background:#f8fafc;
+
+    padding:70px 0;
+
+}
+
+/* ================= FORM ================= */
+
+.contact-form{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.contact-form h3{
+
+    margin-bottom:25px;
+
+    font-weight:700;
+
+}
+
+.contact-form .form-control{
+
+    border-radius:10px;
+
+}
+
+/* ================= INFO ================= */
+
+.contact-info{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    height:100%;
+
+}
+
+.contact-info h3{
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}
+
+.contact-info p{
+
+    margin:20px 0;
+
+    font-size:17px;
+
+}
+
+.contact-info i{
+
+    color:#22C55E;
+
+    margin-right:10px;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .contact-info{
+
+        margin-top:30px;
+
+    }
+
+}

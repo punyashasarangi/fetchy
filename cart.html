@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | FETCHY</title>
+
+    <!-- Favicon -->
+
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/navbar.css">
+
+    <link rel="stylesheet" href="assets/css/cart.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <!-- Logo -->
+
+            <div class="brand">
+
+                <h1 class="logo">FETCHY</h1>
+
+                <p class="tagline">
+                    Fresh Groceries. Fast Delivery.
+                </p>
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="right-navbar">
+
+                <!-- Location -->
+
+                <div class="location">
+
+                    <i class="bi bi-geo-alt-fill"></i>
+
+                    <div>
+
+                        <span class="deliver-text">
+                            Deliver To
+                        </span>
+
+                        <h6>Bhubaneswar</h6>
+
+                    </div>
+
+                </div>
+
+                <!-- Search -->
+
+                <form class="search-box">
+
+                    <div class="input-group">
+
+                        <input type="text"
+                            class="form-control"
+                            placeholder="Search groceries...">
+
+                        <button class="btn btn-success">
+
+                            <i class="bi bi-search"></i>
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <!-- Navigation -->
+
+                <ul class="nav-menu">
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+
+                    <li>
+                        <a href="categories.html">Categories</a>
+                    </li>
+
+                    <li>
+                        <a href="offers.html">Offers</a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-heart"></i>
+                        </a>
+                    </li>
+
+                    <li>
+
+                        <a href="cart.html" class="cart-link">
+
+                            <i class="bi bi-cart3" id="cart-icon"></i>
+
+                            <span id="cart-count" class="cart-badge">0</span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="login.html" class="login-btn">
+
+                            Login
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= CART HEADER ================= -->
+
+    <section class="cart-header">
+
+        <div class="container text-center">
+
+            <h1>
+                <i class="bi bi-cart3"></i>
+                Shopping Cart
+            </h1>
+
+            <p>
+                Review your selected groceries before checkout.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CART SECTION ================= -->
+
+    <section class="cart-page">
+
+        <div class="container">
+
+            <div class="row">
+
+     <!-- ================= LEFT CART ================= -->
+
+<div class="col-lg-8">
+
+    <div class="cart-items">
+
+        <!-- Item 1 -->
+
+        <div class="cart-item">
+
+            <img src="assets/images/products/apple.webp"
+                 alt="Apple">
+
+            <div class="cart-details">
+
+                <h5>Fresh Apples</h5>
+
+                <p>Fresh & Organic Apples</p>
+
+                <h4>₹120</h4>
+
+            </div>
+
+            <div class="quantity">
+
+                <button class="qty-btn">-</button>
+
+                <span>1</span>
+
+                <button class="qty-btn">+</button>
+
+            </div>
+
+            <button class="remove-btn">
+
+                <i class="bi bi-trash"></i>
+
+            </button>
+
+        </div>
+
+        <!-- Item 2 -->
+
+        <div class="cart-item">
+
+            <img src="assets/images/products/milk.jpg"
+                 alt="Milk">
+
+            <div class="cart-details">
+
+                <h5>Fresh Milk</h5>
+
+                <p>500 ml Pack</p>
+
+                <h4>₹35</h4>
+
+            </div>
+
+            <div class="quantity">
+
+                <button class="qty-btn">-</button>
+
+                <span>2</span>
+
+                <button class="qty-btn">+</button>
+
+            </div>
+
+            <button class="remove-btn">
+
+                <i class="bi bi-trash"></i>
+
+            </button>
+
+        </div>
+
+        <!-- Item 3 -->
+
+        <div class="cart-item">
+
+            <img src="assets/images/products/bread.jpg"
+                 alt="Bread">
+
+            <div class="cart-details">
+
+                <h5>Whole Wheat Bread</h5>
+
+                <p>Healthy Bakery Bread</p>
+
+                <h4>₹45</h4>
+
+            </div>
+
+            <div class="quantity">
+
+                <button class="qty-btn">-</button>
+
+                <span>1</span>
+
+                <button class="qty-btn">+</button>
+
+            </div>
+
+            <button class="remove-btn">
+
+                <i class="bi bi-trash"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= ORDER SUMMARY ================= -->
+
+<div class="col-lg-4">
+
+    <div class="order-summary">
+
+        <h3>Order Summary</h3>
+
+        <hr>
+
+        <div class="summary-row">
+
+            <span>Subtotal</span>
+
+            <span>₹235</span>
+
+        </div>
+
+        <div class="summary-row">
+
+            <span>Delivery</span>
+
+            <span>₹30</span>
+
+        </div>
+
+        <div class="summary-row">
+
+            <span>Tax</span>
+
+            <span>₹18</span>
+
+        </div>
+
+        <hr>
+
+        <div class="summary-row total">
+
+            <strong>Total</strong>
+
+            <strong>₹283</strong>
+
+        </div>
+
+        <div class="coupon-box mt-4">
+
+            <input type="text"
+                   class="form-control"
+                   placeholder="Enter Coupon Code">
+
+            <button class="btn btn-success w-100 mt-3">
+
+                Apply Coupon
+
+            </button>
+
+        </div>
+
+        <a href="checkout.html"
+           class="btn btn-success w-100 btn-lg mt-4">
+
+            Proceed to Checkout
+
+        </a>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-4">
+
+                <h2 class="footer-logo">FETCHY</h2>
+
+                <p class="footer-text">
+
+                    Fresh Groceries. Fast Delivery.
+
+                    We deliver fresh groceries quickly,
+                    safely and affordably.
+
+                </p>
+
+            </div>
+
+            <div class="col-lg-2">
+
+                <h5>Quick Links</h5>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="products.html">Products</a></li>
+
+                    <li><a href="offers.html">Offers</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <h5>Customer Care</h5>
+
+                <ul>
+
+                    <li><a href="#">FAQs</a></li>
+
+                    <li><a href="#">Privacy Policy</a></li>
+
+                    <li><a href="#">Terms & Conditions</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <h5>Contact</h5>
+
+                <p>
+
+                    <i class="bi bi-geo-alt-fill"></i>
+
+                    Bhubaneswar, Odisha
+
+                </p>
+
+                <p>
+
+                    <i class="bi bi-envelope-fill"></i>
+
+                    support@fetchy.com
+
+                </p>
+
+                <p>
+
+                    <i class="bi bi-telephone-fill"></i>
+
+                    +91 6372604737
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="text-center">
+
+            © 2026 FETCHY. All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- JavaScript -->
+
+<script src="assets/js/cart.js"></script>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+/* ================= ERROR PAGE ================= */
+
+.error-page{
+
+    min-height:100vh;
+
+    background:#f8fafc;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:60px 0;
+
+}
+
+.error-card{
+
+    background:#fff;
+
+    padding:60px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.error-image{
+
+    width:300px;
+
+    margin-bottom:30px;
+
+}
+
+.error-card h1{
+
+    font-size:90px;
+
+    font-weight:800;
+
+    color:#22C55E;
+
+    margin-bottom:10px;
+
+}
+
+.error-card h2{
+
+    font-size:35px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.error-card p{
+
+    font-size:18px;
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+
+.error-card .btn{
+
+    padding:12px 30px;
+
+    border-radius:10px;
+
+}
+
+@media(max-width:768px){
+
+    .error-card{
+
+        padding:35px 20px;
+
+    }
+
+    .error-image{
+
+        width:220px;
+
+    }
+
+    .error-card h1{
+
+        font-size:70px;
+
+    }
+
+    .error-card h2{
+
+        font-size:28px;
+
+    }
+
+}

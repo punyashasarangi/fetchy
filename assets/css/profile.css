@@ -1,0 +1,155 @@
+/* ================= PROFILE HEADER ================= */
+
+.profile-header{
+
+    background:#f0fff4;
+
+    padding:60px 0;
+
+    text-align:center;
+
+}
+
+.profile-header h1{
+
+    font-size:45px;
+
+    font-weight:700;
+
+}
+
+.profile-header p{
+
+    color:#666;
+
+}
+
+/* ================= PROFILE ================= */
+
+.profile-page{
+
+    background:#f8fafc;
+
+    padding:70px 0;
+
+}
+
+/* ================= SIDEBAR ================= */
+
+.profile-sidebar{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    text-align:center;
+
+}
+
+.profile-image img{
+
+    width:130px;
+
+    height:130px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-bottom:20px;
+
+}
+
+.profile-sidebar ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin-top:20px;
+
+}
+
+.profile-sidebar ul li{
+
+    padding:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    border-radius:10px;
+
+    text-align:left;
+
+}
+
+.profile-sidebar ul li:hover{
+
+    background:#22C55E;
+
+    color:#fff;
+
+}
+
+/* ================= DASHBOARD ================= */
+
+.dashboard-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    height:100%;
+
+}
+
+.dashboard-icon{
+
+    font-size:45px;
+
+    color:#22C55E;
+
+    margin-bottom:20px;
+
+}
+
+.dashboard-card h4{
+
+    font-weight:700;
+
+}
+
+.dashboard-card p{
+
+    color:#666;
+
+    margin:15px 0;
+
+}
+
+.dashboard-card .btn{
+
+    border-radius:10px;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .profile-sidebar{
+
+        margin-bottom:30px;
+
+    }
+
+}
