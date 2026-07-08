@@ -6,9 +6,13 @@ const addCartButtons = document.querySelectorAll(".add-cart");
 
 const cartCount = document.getElementById("cart-count");
 
-// Cart count
+// Get cart from Local Storage
 
-let count = 0;
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+// Update badge on page load
+
+cartCount.innerText = cart.length;
 
 // Loop through every Add to Cart button
 
@@ -26,7 +30,9 @@ addCartButtons.forEach((button) => {
 
         // Product Price
 
-        const productPrice = productCard.querySelector(".price").innerText;
+        const productPrice = Number(
+    productCard.querySelector(".price").childNodes[0].textContent.replace("₹", "").trim()
+);
 
         // Product Image
 
@@ -34,37 +40,45 @@ addCartButtons.forEach((button) => {
 
         // Create Product Object
 
-        const product = {
+       const product = {
 
-            name: productName,
+    name: productName,
 
-            price: productPrice,
+    price: productPrice,
 
-            image: productImage
+    image: productImage,
 
-        };
+    quantity: 1
+
+};
 
         console.log(product);
 
-        // Get existing cart from Local Storage
+        // Add product to cart
 
-        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+       // Check if product already exists
 
-        // Add new product
+const existingProduct = cart.find((item) => item.name === product.name);
 
-        cart.push(product);
+if (existingProduct) {
 
-        // Save updated cart
+    existingProduct.quantity++;
 
-        localStorage.setItem("cart", JSON.stringify(cart));
+} else {
+
+    cart.push(product);
+
+}
+
+// Save cart
+
+localStorage.setItem("cart", JSON.stringify(cart));
+
+// Update badge
+
+cartCount.innerText = cart.length;
 
         console.log(cart);
-
-        // Increase Badge
-
-        count++;
-
-        cartCount.innerText = count;
 
     });
 

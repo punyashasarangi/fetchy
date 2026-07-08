@@ -188,114 +188,18 @@
 
     <div class="cart-items">
 
-        <!-- Item 1 -->
+ <!-- ================= LEFT CART ================= -->
 
-        <div class="cart-item">
+<div class="col-lg-8">
 
-            <img src="assets/images/products/apple.webp"
-                 alt="Apple">
+    <div class="cart-items" id="cart-items">
 
-            <div class="cart-details">
-
-                <h5>Fresh Apples</h5>
-
-                <p>Fresh & Organic Apples</p>
-
-                <h4>₹120</h4>
-
-            </div>
-
-            <div class="quantity">
-
-                <button class="qty-btn">-</button>
-
-                <span>1</span>
-
-                <button class="qty-btn">+</button>
-
-            </div>
-
-            <button class="remove-btn">
-
-                <i class="bi bi-trash"></i>
-
-            </button>
-
-        </div>
-
-        <!-- Item 2 -->
-
-        <div class="cart-item">
-
-            <img src="assets/images/products/milk.jpg"
-                 alt="Milk">
-
-            <div class="cart-details">
-
-                <h5>Fresh Milk</h5>
-
-                <p>500 ml Pack</p>
-
-                <h4>₹35</h4>
-
-            </div>
-
-            <div class="quantity">
-
-                <button class="qty-btn">-</button>
-
-                <span>2</span>
-
-                <button class="qty-btn">+</button>
-
-            </div>
-
-            <button class="remove-btn">
-
-                <i class="bi bi-trash"></i>
-
-            </button>
-
-        </div>
-
-        <!-- Item 3 -->
-
-        <div class="cart-item">
-
-            <img src="assets/images/products/bread.jpg"
-                 alt="Bread">
-
-            <div class="cart-details">
-
-                <h5>Whole Wheat Bread</h5>
-
-                <p>Healthy Bakery Bread</p>
-
-                <h4>₹45</h4>
-
-            </div>
-
-            <div class="quantity">
-
-                <button class="qty-btn">-</button>
-
-                <span>1</span>
-
-                <button class="qty-btn">+</button>
-
-            </div>
-
-            <button class="remove-btn">
-
-                <i class="bi bi-trash"></i>
-
-            </button>
-
-        </div>
+        <!-- Products will be loaded by JavaScript -->
 
     </div>
 
 </div>
+
 
 <!-- ================= ORDER SUMMARY ================= -->
 
@@ -306,42 +210,39 @@
         <h3>Order Summary</h3>
 
         <hr>
-
         <div class="summary-row">
 
-            <span>Subtotal</span>
+    <span>Subtotal</span>
 
-            <span>₹235</span>
+    <span id="subtotal">₹0</span>
 
-        </div>
+</div>
 
-        <div class="summary-row">
+<div class="summary-row">
 
-            <span>Delivery</span>
+    <span>Delivery</span>
 
-            <span>₹30</span>
+    <span id="delivery">₹30</span>
 
-        </div>
+</div>
 
-        <div class="summary-row">
+<div class="summary-row">
 
-            <span>Tax</span>
+    <span>Tax</span>
 
-            <span>₹18</span>
+    <span id="tax">₹0</span>
 
-        </div>
+</div>
 
-        <hr>
+<div class="summary-row total">
 
-        <div class="summary-row total">
+    <strong>Total</strong>
 
-            <strong>Total</strong>
+    <strong id="total">₹0</strong>
 
-            <strong>₹283</strong>
+</div>
 
-        </div>
-
-        <div class="coupon-box mt-4">
+         <div class="coupon-box mt-4">
 
             <input type="text"
                    class="form-control"
@@ -355,12 +256,19 @@
 
         </div>
 
-        <a href="checkout.html"
-           class="btn btn-success w-100 btn-lg mt-4">
+       <button id="clear-cart"
+        class="btn btn-danger w-100 mb-3">
 
-            Proceed to Checkout
+    Clear Cart
 
-        </a>
+</button>
+
+<a href="checkout.html"
+   class="btn btn-success w-100 btn-lg">
+
+    Proceed to Checkout
+
+</a>
 
     </div>
 
