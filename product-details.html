@@ -3,128 +3,294 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-<title>Product Details | FETCHY</title>
+    <title>Product Details | FETCHY</title>
 
-<link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-rel="stylesheet">
+    <!-- Google Font -->
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-<link rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Bootstrap -->
 
-<link rel="stylesheet"
-href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
 
-<link rel="stylesheet"
-href="assets/css/navbar.css">
+    <!-- Bootstrap Icons -->
 
-<link rel="stylesheet"
-href="assets/css/product-details.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/navbar.css">
+
+    <link rel="stylesheet" href="assets/css/product-details.css">
+
+    <link rel="stylesheet" href="assets/css/dark.css">
 
 </head>
 
 <body>
 
-<!-- Copy Navbar -->
+<!-- ================= NAVBAR ================= -->
+
+<!-- Paste your existing navbar here -->
+
+    <nav class="navbar">
+
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <!-- Logo -->
+
+            <div class="brand">
+
+                <h1 class="logo">FETCHY</h1>
+
+                <p class="tagline">
+                    Fresh Groceries. Fast Delivery.
+                </p>
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="right-navbar">
+
+                <!-- Location -->
+
+                <div class="location">
+
+                    <i class="bi bi-geo-alt-fill"></i>
+
+                    <div>
+
+                        <span class="deliver-text">
+                            Deliver To
+                        </span>
+
+                        <h6>Bhubaneswar</h6>
+
+                    </div>
+
+                </div>
+
+                <!-- Search -->
+
+                <form class="search-box">
+
+                    <div class="input-group">
+
+                        <input
+                         type="text"
+                         id="search-input"
+                         class="form-control"
+                         placeholder="Search products...">
+
+                        <button class="btn btn-success">
+
+                            <i class="bi bi-search"></i>
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <!-- Navigation -->
+
+                <ul class="nav-menu">
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="categories.html">Categories</a>
+                    </li>
+
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+
+                    <li>
+                        <a href="offers.html">Offers</a>
+                    </li>
+
+                    <li>
+
+    <a href="wishlist.html" class="wishlist-link">
+
+        <i class="bi bi-heart"></i>
+
+        <span id="wishlist-count" class="cart-badge">0</span>
+
+    </a>
+
+  </li>
+
+<li>
+
+    <a href="cart.html" class="cart-link">
+
+        <i class="bi bi-cart3" id="cart-icon"></i>
+
+        <span id="cart-count" class="cart-badge">0</span>
+
+    </a>
+
+</li>
+
+                    <li>
+
+    <button id="theme-toggle" class="theme-btn">
+
+        <i class="bi bi-moon-fill"></i>
+
+    </button>
+
+</li>
+
+<li>
+
+    <a href="login.html" class="login-btn">
+
+        Login
+
+    </a>
+
+</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+<!-- ================= PRODUCT DETAILS ================= -->
 
 <section class="product-details-page">
 
-<div class="container">
+    <div class="container">
 
-<div class="row align-items-center">
+        <div class="row align-items-center">
 
-<!-- Product Image -->
+            <!-- Product Image -->
 
-<div class="col-lg-6">
+            <div class="col-lg-6">
 
-<div class="product-image-box">
+                <div class="product-image-box">
 
-<img src="assets/images/products/apple.webp"
-class="img-fluid main-product-image"
-alt="Apple">
+                    <img
+                        id="product-image"
+                        src="assets/images/products/apple.webp"
+                        alt="Fresh Apples"
+                        class="img-fluid main-product-image">
 
-</div>
+                </div>
 
-</div>
+            </div>
 
-<!-- Product Details -->
+            <!-- Product Details -->
 
-<div class="col-lg-6">
+            <div class="col-lg-6">
 
-<h1>Fresh Apples</h1>
+                <h1 id="product-name">
 
-<h3 class="text-success">
+                    Fresh Apples
 
-₹120
+                </h1>
 
-<del class="text-muted fs-5">
+                <h3
+                    id="product-price"
+                    class="text-success">
 
-₹150
+                    ₹120
 
-</del>
+                    <del
+                        id="product-old-price"
+                        class="text-muted fs-5">
 
-</h3>
+                        ₹150
 
-<div class="rating">
+                    </del>
 
-⭐⭐⭐⭐⭐
+                </h3>
 
-<span>(4.8 Rating)</span>
+                <div
+                    id="product-rating"
+                    class="rating">
 
-</div>
+                    ⭐⭐⭐⭐⭐
 
-<p class="mt-4">
+                    <span>
 
-Fresh organic apples directly sourced from trusted farms.
+                        (4.8 Rating)
 
-Rich in vitamins, naturally sweet, and perfect for daily nutrition.
+                    </span>
 
-</p>
+                </div>
 
-<ul class="product-features">
+                <p
+                    id="product-description"
+                    class="mt-4">
 
-<li>✔ 100% Organic</li>
+                    Fresh organic apples directly sourced from trusted farms.
+                    Rich in vitamins, naturally sweet and perfect for daily nutrition.
 
-<li>✔ Farm Fresh</li>
+                </p>
 
-<li>✔ 1 Kg Pack</li>
+                <ul
+                    id="product-features"
+                    class="product-features">
 
-<li>✔ Delivery in 10 Minutes</li>
+                    <li>✔ 100% Organic</li>
 
-</ul>
+                    <li>✔ Farm Fresh</li>
 
-<div class="mt-4">
+                    <li>✔ 1 Kg Pack</li>
 
-<button class="btn btn-success btn-lg">
+                    <li>✔ Delivery in 10 Minutes</li>
 
-<i class="bi bi-cart-plus"></i>
+                </ul>
 
-Add to Cart
+                <div class="mt-4">
 
-</button>
+                    <button
+                        id="add-cart"
+                        class="btn btn-success btn-lg">
 
-<button class="btn btn-outline-success btn-lg ms-2">
+                        <i class="bi bi-cart-plus"></i>
 
-Buy Now
+                        Add to Cart
 
-</button>
+                    </button>
 
-</div>
+                    <button
+                        id="buy-now"
+                        class="btn btn-outline-success btn-lg ms-2">
 
-</div>
+                        Buy Now
 
-</div>
+                    </button>
 
-</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -142,21 +308,23 @@ Buy Now
 
         <div class="row g-4">
 
-            <!-- Product 1 -->
+            <!-- Banana -->
 
             <div class="col-lg-4">
 
                 <div class="related-card">
 
-                    <img src="assets/images/products/banana.webp"
+                    <img
+                        src="assets/images/products/banana.webp"
                         class="img-fluid"
-                        alt="Banana">
+                        alt="Fresh Bananas">
 
                     <h4>Fresh Bananas</h4>
 
                     <p>₹60</p>
 
-                    <a href="product-details.html"
+                    <a
+                        href="product-details.html?product=Fresh%20Bananas"
                         class="btn btn-success">
 
                         View Details
@@ -167,21 +335,23 @@ Buy Now
 
             </div>
 
-            <!-- Product 2 -->
+            <!-- Milk -->
 
             <div class="col-lg-4">
 
                 <div class="related-card">
 
-                    <img src="assets/images/products/milk.jpg"
+                    <img
+                        src="assets/images/products/milk.jpg"
                         class="img-fluid"
-                        alt="Milk">
+                        alt="Fresh Milk">
 
                     <h4>Fresh Milk</h4>
 
                     <p>₹35</p>
 
-                    <a href="product-details.html"
+                    <a
+                        href="product-details.html?product=Fresh%20Milk"
                         class="btn btn-success">
 
                         View Details
@@ -192,21 +362,23 @@ Buy Now
 
             </div>
 
-            <!-- Product 3 -->
+            <!-- Bread -->
 
             <div class="col-lg-4">
 
                 <div class="related-card">
 
-                    <img src="assets/images/products/bread.jpg"
+                    <img
+                        src="assets/images/products/bread.jpg"
                         class="img-fluid"
-                        alt="Bread">
+                        alt="Whole Wheat Bread">
 
                     <h4>Whole Wheat Bread</h4>
 
                     <p>₹45</p>
 
-                    <a href="product-details.html"
+                    <a
+                        href="product-details.html?product=Whole%20Wheat%20Bread"
                         class="btn btn-success">
 
                         View Details
@@ -223,6 +395,8 @@ Buy Now
 
 </section>
 
+<!-- ================= FOOTER ================= -->
+
 <footer class="footer">
 
     <div class="container">
@@ -238,6 +412,12 @@ Buy Now
     </div>
 
 </footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+ <script src="assets/js/products-data.js"></script>
+<script src="assets/js/product-details.js"></script>
+<script src="assets/js/theme.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 

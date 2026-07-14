@@ -9,8 +9,6 @@
 
     <title>Checkout | FETCHY</title>
 
-    <!-- Favicon -->
-
     <link rel="icon" href="favicon.ico">
 
     <!-- Google Font -->
@@ -20,7 +18,8 @@
 
     <!-- Bootstrap CSS -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
 
     <!-- Bootstrap Icons -->
 
@@ -35,142 +34,188 @@
 
     <link rel="stylesheet" href="assets/css/checkout.css">
 
+    <link rel="stylesheet" href="assets/css/dark.css">
+
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+<!-- ================= NAVBAR ================= -->
 
-    <nav class="navbar">
+<nav class="navbar">
 
-        <div class="container d-flex justify-content-between align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
 
-            <div class="brand">
+        <div class="brand">
 
-                <h1 class="logo">FETCHY</h1>
+            <h1 class="logo">FETCHY</h1>
 
-                <p class="tagline">
+            <p class="tagline">
 
-                    Fresh Groceries. Fast Delivery.
-
-                </p>
-
-            </div>
-
-            <div class="right-navbar">
-
-                <div class="location">
-
-                    <i class="bi bi-geo-alt-fill"></i>
-
-                    <div>
-
-                        <span class="deliver-text">
-
-                            Deliver To
-
-                        </span>
-
-                        <h6>Bhubaneswar</h6>
-
-                    </div>
-
-                </div>
-
-                <form class="search-box">
-
-                    <div class="input-group">
-
-                        <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Search groceries...">
-
-                        <button class="btn btn-success">
-
-                            <i class="bi bi-search"></i>
-
-                        </button>
-
-                    </div>
-
-                </form>
-
-                <ul class="nav-menu">
-
-                    <li><a href="index.html">Home</a></li>
-
-                    <li><a href="products.html">Products</a></li>
-
-                    <li><a href="offers.html">Offers</a></li>
-
-                    <li>
-
-                        <a href="cart.html" class="cart-link">
-
-                            <i class="bi bi-cart3" id="cart-icon"></i>
-
-                            <span id="cart-count" class="cart-badge">0</span>
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="login.html" class="login-btn">
-
-                            Login
-
-                        </a>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </nav>
-
-    <!-- ================= CHECKOUT HEADER ================= -->
-
-    <section class="checkout-header">
-
-        <div class="container text-center">
-
-            <h1>
-
-                Checkout
-
-            </h1>
-
-            <p>
-
-                Complete your order securely.
+                Fresh Groceries. Fast Delivery.
 
             </p>
 
         </div>
 
-    </section>
+        <div class="right-navbar">
 
-    <!-- ================= CHECKOUT SECTION ================= -->
+            <!-- Location -->
 
-    <section class="checkout-page">
+            <div class="location">
 
-        <div class="container">
+                <i class="bi bi-geo-alt-fill"></i>
 
-            <div class="row">
-    
-    <!-- ================= BILLING DETAILS ================= -->
+                <div>
+
+                    <span class="deliver-text">
+
+                        Deliver To
+
+                    </span>
+
+                    <h6>Bhubaneswar</h6>
+
+                </div>
+
+            </div>
+
+            <!-- Search -->
+
+            <form class="search-box">
+
+                <div class="input-group">
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Search groceries...">
+
+                    <button class="btn btn-success">
+
+                        <i class="bi bi-search"></i>
+
+                    </button>
+
+                </div>
+
+            </form>
+
+            <!-- Navigation -->
+
+            <ul class="nav-menu">
+
+                <li>
+
+                    <a href="index.html">Home</a>
+
+                </li>
+
+                <li>
+
+                    <a href="products.html">Products</a>
+
+                </li>
+
+                <li>
+
+                    <a href="categories.html">Categories</a>
+
+                </li>
+
+                <li>
+
+                    <a href="offers.html">Offers</a>
+
+                </li>
+
+                <li>
+
+                    <a href="wishlist.html" class="wishlist-link">
+
+                        <i class="bi bi-heart"></i>
+
+                        <span id="wishlist-count" class="cart-badge">0</span>
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="cart.html" class="cart-link">
+
+                        <i class="bi bi-cart3"></i>
+
+                        <span id="cart-count" class="cart-badge">0</span>
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="login.html" class="login-btn">
+
+                        Login
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ================= HEADER ================= -->
+
+<section class="checkout-header">
+
+    <div class="container text-center">
+
+        <h1>
+
+            <i class="bi bi-credit-card"></i>
+
+            Checkout
+
+        </h1>
+
+        <p>
+
+            Complete your order securely.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= CHECKOUT ================= -->
+
+<section class="checkout-page">
+
+<div class="container">
+
+<div class="row">
+
+<!-- ================= BILLING DETAILS ================= -->
 
 <div class="col-lg-8">
 
     <div class="checkout-form">
 
-        <h3>Billing Details</h3>
+        <h3 class="mb-4">
+
+            <i class="bi bi-person-fill"></i>
+
+            Billing Details
+
+        </h3>
 
         <div class="row">
 
@@ -178,7 +223,9 @@
 
                 <label class="form-label">First Name</label>
 
-                <input type="text"
+                <input
+                    type="text"
+                    id="first-name"
                     class="form-control"
                     placeholder="Enter First Name">
 
@@ -188,7 +235,9 @@
 
                 <label class="form-label">Last Name</label>
 
-                <input type="text"
+                <input
+                    type="text"
+                    id="last-name"
                     class="form-control"
                     placeholder="Enter Last Name">
 
@@ -198,7 +247,9 @@
 
                 <label class="form-label">Phone Number</label>
 
-                <input type="tel"
+                <input
+                    type="tel"
+                    id="phone"
                     class="form-control"
                     placeholder="+91 9876543210">
 
@@ -208,7 +259,9 @@
 
                 <label class="form-label">Email Address</label>
 
-                <input type="email"
+                <input
+                    type="email"
+                    id="email"
                     class="form-control"
                     placeholder="example@gmail.com">
 
@@ -216,9 +269,14 @@
 
             <div class="col-12 mb-3">
 
-                <label class="form-label">Delivery Address</label>
+                <label class="form-label">
+
+                    Delivery Address
+
+                </label>
 
                 <textarea
+                    id="address"
                     class="form-control"
                     rows="4"
                     placeholder="Enter your complete address"></textarea>
@@ -227,9 +285,15 @@
 
             <div class="col-md-6 mb-3">
 
-                <label class="form-label">City</label>
+                <label class="form-label">
 
-                <input type="text"
+                    City
+
+                </label>
+
+                <input
+                    type="text"
+                    id="city"
                     class="form-control"
                     placeholder="Bhubaneswar">
 
@@ -237,9 +301,15 @@
 
             <div class="col-md-6 mb-3">
 
-                <label class="form-label">PIN Code</label>
+                <label class="form-label">
 
-                <input type="text"
+                    PIN Code
+
+                </label>
+
+                <input
+                    type="text"
+                    id="pincode"
                     class="form-control"
                     placeholder="751001">
 
@@ -247,50 +317,69 @@
 
         </div>
 
-        <h4 class="mt-4 mb-3">
+        <hr class="my-4">
+
+        <h4 class="mb-3">
+
+            <i class="bi bi-wallet2"></i>
 
             Payment Method
 
         </h4>
 
-        <div class="form-check mb-2">
+        <div class="form-check mb-3">
 
-            <input class="form-check-input"
+            <input
+                class="form-check-input"
                 type="radio"
                 name="payment"
+                id="cod"
+                value="Cash on Delivery"
                 checked>
 
-            <label class="form-check-label">
+            <label
+                class="form-check-label"
+                for="cod">
 
-                Cash on Delivery
-
-            </label>
-
-        </div>
-
-        <div class="form-check mb-2">
-
-            <input class="form-check-input"
-                type="radio"
-                name="payment">
-
-            <label class="form-check-label">
-
-                UPI Payment
+                💵 Cash on Delivery
 
             </label>
 
         </div>
 
-        <div class="form-check mb-2">
+        <div class="form-check mb-3">
 
-            <input class="form-check-input"
+            <input
+                class="form-check-input"
                 type="radio"
-                name="payment">
+                name="payment"
+                id="upi"
+                value="UPI">
 
-            <label class="form-check-label">
+            <label
+                class="form-check-label"
+                for="upi">
 
-                Credit / Debit Card
+                📱 UPI
+
+            </label>
+
+        </div>
+
+        <div class="form-check">
+
+            <input
+                class="form-check-input"
+                type="radio"
+                name="payment"
+                id="card"
+                value="Card">
+
+            <label
+                class="form-check-label"
+                for="card">
+
+                💳 Credit / Debit Card
 
             </label>
 
@@ -300,39 +389,25 @@
 
 </div>
 
- <!-- ================= ORDER SUMMARY ================= -->
+<!-- ================= ORDER SUMMARY ================= -->
 
 <div class="col-lg-4">
 
     <div class="checkout-summary">
 
-        <h3>Your Order</h3>
+        <h3>
+
+            <i class="bi bi-bag-check-fill"></i>
+
+            Your Order
+
+        </h3>
 
         <hr>
 
-        <div class="summary-item">
+        <!-- Dynamic Products -->
 
-            <span>Fresh Apples × 1</span>
-
-            <span>₹120</span>
-
-        </div>
-
-        <div class="summary-item">
-
-            <span>Fresh Milk × 2</span>
-
-            <span>₹70</span>
-
-        </div>
-
-        <div class="summary-item">
-
-            <span>Whole Wheat Bread × 1</span>
-
-            <span>₹45</span>
-
-        </div>
+        <div id="checkout-items"></div>
 
         <hr>
 
@@ -340,7 +415,7 @@
 
             <span>Subtotal</span>
 
-            <span>₹235</span>
+            <span id="checkout-subtotal">₹0</span>
 
         </div>
 
@@ -348,15 +423,15 @@
 
             <span>Delivery</span>
 
-            <span>₹30</span>
+            <span id="checkout-delivery">₹30</span>
 
         </div>
 
         <div class="summary-item">
 
-            <span>GST</span>
+            <span>GST (5%)</span>
 
-            <span>₹18</span>
+            <span id="checkout-tax">₹0</span>
 
         </div>
 
@@ -366,11 +441,13 @@
 
             <strong>Total</strong>
 
-            <strong>₹283</strong>
+            <strong id="checkout-total">₹0</strong>
 
         </div>
 
-        <button class="btn btn-success btn-lg w-100 mt-4">
+        <button
+            id="place-order-btn"
+            class="btn btn-success btn-lg w-100 mt-4">
 
             <i class="bi bi-bag-check-fill"></i>
 
@@ -382,102 +459,7 @@
 
 </div>
 
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= FOOTER ================= -->
-
-<footer class="footer">
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-lg-4">
-
-                <h2 class="footer-logo">FETCHY</h2>
-
-                <p class="footer-text">
-
-                    Fresh Groceries. Fast Delivery.
-
-                    Your trusted online grocery partner.
-
-                </p>
-
-            </div>
-
-            <div class="col-lg-2">
-
-                <h5>Quick Links</h5>
-
-                <ul>
-
-                    <li><a href="index.html">Home</a></li>
-
-                    <li><a href="products.html">Products</a></li>
-
-                    <li><a href="offers.html">Offers</a></li>
-
-                    <li><a href="contact.html">Contact</a></li>
-
-                </ul>
-
-            </div>
-
-            <div class="col-lg-3">
-
-                <h5>Customer Care</h5>
-
-                <ul>
-
-                    <li><a href="#">FAQs</a></li>
-
-                    <li><a href="#">Privacy Policy</a></li>
-
-                    <li><a href="#">Terms & Conditions</a></li>
-
-                </ul>
-
-            </div>
-
-            <div class="col-lg-3">
-
-                <h5>Contact</h5>
-
-                <p><i class="bi bi-geo-alt-fill"></i> Bhubaneswar, Odisha</p>
-
-                <p><i class="bi bi-envelope-fill"></i> support@fetchy.com</p>
-
-                <p><i class="bi bi-telephone-fill"></i> +91 6372604737</p>
-
-            </div>
-
-        </div>
-
-        <hr>
-
-        <div class="text-center">
-
-            © 2026 FETCHY. All Rights Reserved.
-
-        </div>
-
-    </div>
-
-</footer>
-
-<!-- JavaScript -->
-
-<script src="assets/js/cart.js"></script>
-
-<!-- Bootstrap JS -->
+<script src="assets/js/checkout.js"></script>
+<script src="assets/js/theme.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-</html>

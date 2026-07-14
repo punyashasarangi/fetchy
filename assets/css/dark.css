@@ -1,0 +1,2159 @@
+/* ==========================================
+   FETCHY DARK MODE
+   ========================================== */
+
+/* ================= BODY ================= */
+
+body.dark-mode{
+
+    background:#18181B;
+    color:#ffffff;
+    transition:all .3s ease;
+
+}
+
+/* ================= NAVBAR ================= */
+
+body.dark-mode .navbar{
+
+    background:#202124 !important;
+    box-shadow:0 3px 12px rgba(0,0,0,.45);
+
+}
+
+/* Logo */
+
+body.dark-mode .logo{
+
+    color:#22C55E;
+
+}
+
+body.dark-mode .tagline{
+
+    color:#d1d5db;
+
+}
+
+/* Location */
+
+body.dark-mode .deliver-text{
+
+    color:#d1d5db;
+
+}
+
+body.dark-mode .location h6{
+
+    color:#ffffff;
+
+}
+
+body.dark-mode .location i{
+
+    color:#22C55E;
+
+}
+
+/* ================= NAVIGATION ================= */
+
+body.dark-mode .nav-menu a{
+
+    color:#ffffff;
+
+}
+
+body.dark-mode .nav-menu a:hover{
+
+    color:#22C55E;
+
+}
+
+body.dark-mode .nav-menu i{
+
+    color:#ffffff;
+
+}
+
+body.dark-mode .nav-menu i:hover{
+
+    color:#22C55E;
+
+}
+
+/* ================= SEARCH ================= */
+
+body.dark-mode .search-box .form-control{
+
+    background:#2D2D2D;
+    color:#ffffff;
+    border:1px solid #444;
+
+}
+
+body.dark-mode .search-box .form-control::placeholder{
+
+    color:#bbbbbb;
+
+}
+
+body.dark-mode .search-box .btn{
+
+    background:#22C55E;
+
+}
+
+body.dark-mode .search-box .btn:hover{
+
+    background:#16A34A;
+
+}
+
+/* ================= THEME BUTTON ================= */
+
+body.dark-mode .theme-btn{
+
+    background:#22C55E;
+
+}
+
+body.dark-mode .theme-btn i{
+
+    color:#ffffff;
+
+}
+
+/* ================= LOGIN BUTTON ================= */
+
+body.dark-mode .login-btn{
+
+    background:#22C55E;
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .login-btn:hover{
+
+    background:#16A34A;
+
+}
+
+/* ================= BADGES ================= */
+
+body.dark-mode .cart-badge{
+
+    background:#EF4444;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+body.dark-mode .hero{
+
+    background:#18181B !important;
+
+}
+
+body.dark-mode .hero-title{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .hero-title span{
+
+    color:#22C55E !important;
+
+}
+
+body.dark-mode .hero-description{
+
+    color:#d1d5db !important;
+
+}
+
+body.dark-mode .hero-badge{
+
+    background:#23452F !important;
+
+    color:#A7F3D0 !important;
+
+}
+
+body.dark-mode .info-box{
+
+    background:#2A2A2A !important;
+
+    color:#ffffff !important;
+
+    border:1px solid #3A3A3A;
+
+}
+
+/* ==========================================
+   CATEGORIES
+========================================== */
+
+body.dark-mode .categories{
+
+    background:#202124 !important;
+
+}
+
+body.dark-mode .category-card{
+
+    background:#2A2A2A !important;
+
+    color:#ffffff !important;
+
+    border:1px solid #3A3A3A;
+
+    transition:.3s;
+
+}
+
+body.dark-mode .category-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.4);
+
+}
+
+body.dark-mode .category-card h5{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .category-card p{
+
+    color:#d1d5db !important;
+
+}
+
+/* ==========================================
+   FEATURED PRODUCTS
+========================================== */
+
+body.dark-mode .featured-products{
+
+    background:#18181B !important;
+
+}
+
+body.dark-mode .product-card{
+
+    background:#2A2A2A !important;
+
+    color:#ffffff !important;
+
+    border:1px solid #3A3A3A;
+
+    transition:.3s;
+
+}
+
+body.dark-mode .product-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.45);
+
+}
+
+body.dark-mode .product-card h5{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .product-card p{
+
+    color:#d1d5db !important;
+
+}
+
+body.dark-mode .price{
+
+    color:#22C55E !important;
+
+}
+
+/* ==========================================
+   OFFERS
+========================================== */
+
+body.dark-mode .offers{
+
+    background:#202124 !important;
+
+}
+
+body.dark-mode .offer-card{
+
+    background:#2A2A2A !important;
+
+    color:#ffffff !important;
+
+    border:1px solid #3A3A3A;
+
+}
+
+body.dark-mode .offer-card h4{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .offer-card p{
+
+    color:#d1d5db !important;
+
+}
+
+/* ==========================================
+   COMMON HEADINGS
+========================================== */
+
+body.dark-mode .section-title{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .section-subtitle{
+
+    color:#d1d5db !important;
+
+}
+
+/* ==========================================
+   TODAY'S DEALS
+========================================== */
+
+body.dark-mode .offers{
+
+    background:#18181B !important;
+
+}
+
+body.dark-mode .offers h2,
+body.dark-mode .offers p{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .offer-card{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+}
+
+body.dark-mode .offer-card h4,
+body.dark-mode .offer-card p{
+
+    color:#ffffff !important;
+
+}
+
+
+/* ==========================================
+   WHY CHOOSE FETCHY
+========================================== */
+
+body.dark-mode .features{
+
+    background:#202124 !important;
+
+}
+
+body.dark-mode .feature-card{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .feature-card h5,
+body.dark-mode .feature-card p{
+
+    color:#ffffff !important;
+
+}
+
+
+/* ==========================================
+   TESTIMONIALS
+========================================== */
+
+body.dark-mode .testimonials{
+
+    background:#18181B !important;
+
+}
+
+body.dark-mode .testimonial-card{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .testimonial-card p,
+body.dark-mode .testimonial-card h5{
+
+    color:#ffffff !important;
+
+}
+
+
+/* ==========================================
+   COMMON SECTION TITLES
+========================================== */
+
+body.dark-mode .section-title{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .section-subtitle{
+
+    color:#d1d5db !important;
+
+}
+
+/* ================= SECTION TITLES ================= */
+
+body.dark-mode .section-title h2{
+
+    color:#ffffff !important;
+
+    font-weight:700;
+
+}
+
+body.dark-mode .section-title p{
+
+    color:#D1D5DB !important;
+
+}
+
+/* ================= TODAY'S DEALS ================= */
+
+body.dark-mode .deals{
+
+    background:#18181B !important;
+
+}
+
+body.dark-mode .deal-card{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+}
+
+body.dark-mode .deal-card h3,
+body.dark-mode .deal-card h4,
+body.dark-mode .deal-card p{
+
+    color:#ffffff !important;
+
+}
+
+/* ================= WHY CHOOSE ================= */
+
+body.dark-mode .why-us{
+
+    background:#202124 !important;
+
+}
+
+body.dark-mode .why-card{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+}
+
+body.dark-mode .why-card h4,
+body.dark-mode .why-card p{
+
+    color:#ffffff !important;
+
+}
+
+/* ================= TESTIMONIALS ================= */
+
+body.dark-mode .testimonials{
+
+    background:#18181B !important;
+
+}
+
+body.dark-mode .testimonial-card{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+}
+
+body.dark-mode .testimonial-card h5,
+body.dark-mode .testimonial-card p,
+body.dark-mode .testimonial-card span{
+
+    color:#ffffff !important;
+
+}
+
+/* ================= DOWNLOAD APP ================= */
+
+body.dark-mode .download-app{
+
+    background:#202124 !important;
+
+}
+
+body.dark-mode .download-app h2,
+body.dark-mode .download-app p{
+
+    color:#ffffff !important;
+
+}
+
+/* ================= FOOTER ================= */
+
+body.dark-mode .footer{
+
+    background:#121212 !important;
+
+}
+
+body.dark-mode .footer h2,
+body.dark-mode .footer h5,
+body.dark-mode .footer p,
+body.dark-mode .footer a{
+
+    color:#ffffff !important;
+
+}
+
+/* ==========================================
+   PRODUCTS PAGE DARK MODE
+========================================== */
+
+body.dark-mode .products-page{
+
+    background:#18181B !important;
+
+}
+
+body.dark-mode .products-hero{
+
+    background:#202124 !important;
+
+}
+
+body.dark-mode .products-hero h1{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .products-hero p{
+
+    color:#D1D5DB !important;
+
+}
+
+/* Sidebar */
+
+body.dark-mode .sidebar{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    box-shadow:none;
+
+}
+
+body.dark-mode .sidebar h4{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .category-list a{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .category-list a:hover{
+
+    background:#3A3A3A !important;
+
+}
+
+body.dark-mode .category-list a.active{
+
+    background:#22C55E !important;
+
+    color:#ffffff !important;
+
+}
+
+/* Product Card */
+
+body.dark-mode .product-card{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    box-shadow:none;
+
+}
+
+body.dark-mode .product-card h5{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .price{
+
+    color:#22C55E !important;
+
+}
+
+body.dark-mode .price span{
+
+    color:#BDBDBD !important;
+
+}
+
+body.dark-mode .heart-icon{
+
+    color:#ffffff;
+
+}
+
+body.dark-mode .heart-icon.active{
+
+    color:#ff3b3b;
+
+}
+
+/* Sort Dropdown */
+
+body.dark-mode #sort-products{
+
+    background:#2A2A2A !important;
+
+    color:#ffffff !important;
+
+    border:1px solid #555;
+
+}
+
+/* Product Modal */
+
+body.dark-mode .modal-content{
+
+    background:#2A2A2A;
+
+    color:#ffffff;
+
+}
+
+body.dark-mode .modal-header{
+
+    border-bottom:1px solid #444;
+
+}
+
+body.dark-mode .modal-footer{
+
+    border-top:1px solid #444;
+
+}
+
+body.dark-mode .btn-close{
+
+    filter:invert(1);
+
+}
+
+/* ==========================================
+   CART PAGE DARK MODE
+========================================== */
+
+/* Cart Header */
+
+body.dark-mode .cart-header{
+
+    background:#202124 !important;
+
+}
+
+body.dark-mode .cart-header h1{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .cart-header p{
+
+    color:#D1D5DB !important;
+
+}
+
+/* Cart Page */
+
+body.dark-mode .cart-page{
+
+    background:#18181B !important;
+
+}
+
+/* Cart Item */
+
+body.dark-mode .cart-item{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    box-shadow:none;
+
+}
+
+body.dark-mode .cart-details h5{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .cart-details p{
+
+    color:#CFCFCF !important;
+
+}
+
+body.dark-mode .cart-details h4{
+
+    color:#22C55E !important;
+
+}
+
+/* Quantity */
+
+body.dark-mode .quantity span{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .qty-btn{
+
+    background:#22C55E;
+
+}
+
+body.dark-mode .qty-btn:hover{
+
+    background:#16A34A;
+
+}
+
+/* Remove Button */
+
+body.dark-mode .remove-btn{
+
+    color:#EF4444;
+
+}
+
+/* Order Summary */
+
+body.dark-mode .order-summary{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    box-shadow:none;
+
+}
+
+body.dark-mode .order-summary h3{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .summary-row{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .total{
+
+    color:#22C55E !important;
+
+}
+
+/* Coupon */
+
+body.dark-mode .coupon-box input{
+
+    background:#333333 !important;
+
+    color:#ffffff !important;
+
+    border:1px solid #555;
+
+}
+
+body.dark-mode .coupon-box input::placeholder{
+
+    color:#BBBBBB;
+
+}
+
+/* ==========================================
+   WISHLIST PAGE DARK MODE
+========================================== */
+
+/* Wishlist Header */
+
+body.dark-mode .wishlist-header{
+
+    background:#202124 !important;
+
+}
+
+body.dark-mode .wishlist-header h1{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .wishlist-header p{
+
+    color:#D1D5DB !important;
+
+}
+
+/* Wishlist Page */
+
+body.dark-mode .wishlist-page{
+
+    background:#18181B !important;
+
+}
+
+/* Wishlist Item */
+
+body.dark-mode .wishlist-item{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    box-shadow:none;
+
+}
+
+/* Product Details */
+
+body.dark-mode .wishlist-details h4{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .wishlist-details p{
+
+    color:#D1D5DB !important;
+
+}
+
+body.dark-mode .wishlist-details h5{
+
+    color:#22C55E !important;
+
+}
+
+/* Buttons */
+
+body.dark-mode .wishlist-buttons .btn-success{
+
+    background:#22C55E;
+
+    border:none;
+
+}
+
+body.dark-mode .wishlist-buttons .btn-success:hover{
+
+    background:#16A34A;
+
+}
+
+body.dark-mode .wishlist-buttons .btn-outline-danger{
+
+    color:#FF6B6B;
+
+    border-color:#FF6B6B;
+
+}
+
+body.dark-mode .wishlist-buttons .btn-outline-danger:hover{
+
+    background:#FF6B6B;
+
+    color:#ffffff;
+
+}
+
+/* Empty Wishlist */
+
+body.dark-mode .text-center h3{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .text-center p{
+
+    color:#D1D5DB !important;
+
+}
+
+/* ==========================================
+   CHECKOUT PAGE DARK MODE
+========================================== */
+
+/* Checkout Header */
+
+body.dark-mode .checkout-header{
+
+    background:#202124 !important;
+
+}
+
+body.dark-mode .checkout-header h1{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .checkout-header p{
+
+    color:#D1D5DB !important;
+
+}
+
+/* Checkout Page */
+
+body.dark-mode .checkout-page{
+
+    background:#18181B !important;
+
+}
+
+/* Billing Form */
+
+body.dark-mode .checkout-form{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    box-shadow:none;
+
+}
+
+body.dark-mode .checkout-form h3,
+body.dark-mode .checkout-form h4,
+body.dark-mode .checkout-form label{
+
+    color:#ffffff !important;
+
+}
+
+/* Inputs */
+
+body.dark-mode .checkout-form .form-control{
+
+    background:#333333 !important;
+
+    color:#ffffff !important;
+
+    border:1px solid #555;
+
+}
+
+body.dark-mode .checkout-form .form-control::placeholder{
+
+    color:#BDBDBD;
+
+}
+
+body.dark-mode .checkout-form textarea{
+
+    background:#333333 !important;
+
+    color:#ffffff !important;
+
+    border:1px solid #555;
+
+}
+
+/* Payment Options */
+
+body.dark-mode .form-check-label{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .form-check-input{
+
+    background:#333333;
+
+    border-color:#666;
+
+}
+
+body.dark-mode .form-check-input:checked{
+
+    background:#22C55E;
+
+    border-color:#22C55E;
+
+}
+
+/* Order Summary */
+
+body.dark-mode .checkout-summary{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    box-shadow:none;
+
+}
+
+body.dark-mode .checkout-summary h3{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .summary-item{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .total-price{
+
+    color:#22C55E !important;
+
+}
+
+/* Divider */
+
+body.dark-mode hr{
+
+    border-color:#444;
+
+}
+
+/* Button */
+
+body.dark-mode .checkout-summary .btn{
+
+    background:#22C55E;
+
+    border:none;
+
+}
+
+body.dark-mode .checkout-summary .btn:hover{
+
+    background:#16A34A;
+
+}
+
+/* ==========================================
+   OFFERS PAGE DARK MODE
+========================================== */
+
+/* Offer Header */
+
+body.dark-mode .offer-header{
+
+    background:#202124 !important;
+
+}
+
+body.dark-mode .offer-header h1{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .offer-header p{
+
+    color:#D1D5DB !important;
+
+}
+
+/* Offer Page */
+
+body.dark-mode .offer-page{
+
+    background:#18181B !important;
+
+}
+
+/* Offer Card */
+
+body.dark-mode .offer-card{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    box-shadow:none;
+
+}
+
+body.dark-mode .offer-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.45);
+
+}
+
+/* Offer Content */
+
+body.dark-mode .offer-card h3{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .offer-card p{
+
+    color:#D1D5DB !important;
+
+}
+
+/* Discount Badge */
+
+body.dark-mode .discount-badge{
+
+    background:#EF4444;
+
+    color:#ffffff;
+
+}
+
+/* Buttons */
+
+body.dark-mode .offer-card .btn-success{
+
+    background:#22C55E;
+
+    border:none;
+
+}
+
+body.dark-mode .offer-card .btn-success:hover{
+
+    background:#16A34A;
+
+}
+
+body.dark-mode .offer-card .btn-outline-success{
+
+    color:#22C55E;
+
+    border-color:#22C55E;
+
+}
+
+body.dark-mode .offer-card .btn-outline-success:hover{
+
+    background:#22C55E;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================
+   CATEGORIES PAGE DARK MODE
+========================================== */
+
+/* Category Header */
+
+body.dark-mode .category-header{
+
+    background:#202124 !important;
+
+}
+
+body.dark-mode .category-header h1{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .category-header p{
+
+    color:#D1D5DB !important;
+
+}
+
+/* Category Page */
+
+body.dark-mode .category-page{
+
+    background:#18181B !important;
+
+}
+
+/* Category Card */
+
+body.dark-mode .category-card{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    box-shadow:none;
+
+    transition:.3s;
+
+}
+
+body.dark-mode .category-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.45);
+
+}
+
+/* Category Content */
+
+body.dark-mode .category-card h4{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .category-card p{
+
+    color:#D1D5DB !important;
+
+}
+
+/* Buttons */
+
+body.dark-mode .category-card .btn-success{
+
+    background:#22C55E;
+
+    border:none;
+
+}
+
+body.dark-mode .category-card .btn-success:hover{
+
+    background:#16A34A;
+
+}
+
+body.dark-mode .category-card .btn-outline-success{
+
+    color:#22C55E;
+
+    border-color:#22C55E;
+
+}
+
+body.dark-mode .category-card .btn-outline-success:hover{
+
+    background:#22C55E;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================
+   LOGIN & SIGNUP PAGE DARK MODE
+========================================== */
+
+/* Auth Section */
+
+body.dark-mode .auth-section{
+
+    background:linear-gradient(135deg,#121212,#202124) !important;
+
+}
+
+/* Auth Card */
+
+body.dark-mode .auth-card{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.45);
+
+}
+
+/* Logo */
+
+body.dark-mode .auth-logo{
+
+    color:#22C55E;
+
+}
+
+body.dark-mode .auth-tagline{
+
+    color:#D1D5DB !important;
+
+}
+
+/* Headings */
+
+body.dark-mode .auth-card h2{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .auth-card p{
+
+    color:#D1D5DB !important;
+
+}
+
+/* Inputs */
+
+body.dark-mode .auth-card .form-control{
+
+    background:#333333 !important;
+
+    color:#ffffff !important;
+
+    border:1px solid #555;
+
+}
+
+body.dark-mode .auth-card .form-control::placeholder{
+
+    color:#BBBBBB;
+
+}
+
+body.dark-mode .auth-card .form-control:focus{
+
+    border-color:#22C55E;
+
+    box-shadow:0 0 0 .2rem rgba(34,197,94,.25);
+
+}
+
+/* Labels */
+
+body.dark-mode .auth-card label{
+
+    color:#ffffff !important;
+
+}
+
+/* Divider */
+
+body.dark-mode .divider::before{
+
+    background:#555;
+
+}
+
+body.dark-mode .divider span{
+
+    background:#2A2A2A !important;
+
+    color:#D1D5DB;
+
+}
+
+/* Links */
+
+body.dark-mode .forgot-link,
+
+body.dark-mode .signup-link{
+
+    color:#22C55E;
+
+}
+
+/* Outline Button */
+
+body.dark-mode .btn-outline-dark{
+
+    background:transparent;
+
+    border:1px solid #ffffff;
+
+    color:#ffffff;
+
+}
+
+body.dark-mode .btn-outline-dark:hover{
+
+    background:#ffffff;
+
+    color:#18181B;
+
+}
+
+/* ==========================================
+   ORDERS PAGE DARK MODE
+========================================== */
+
+/* Orders Header */
+
+body.dark-mode .orders-header{
+
+    background:#202124 !important;
+
+}
+
+body.dark-mode .orders-header h1{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .orders-header p{
+
+    color:#D1D5DB !important;
+
+}
+
+/* Orders Page */
+
+body.dark-mode .orders-page{
+
+    background:#18181B !important;
+
+}
+
+/* Orders Container */
+
+body.dark-mode .orders-container{
+
+    background:transparent;
+
+}
+
+/* Order Card */
+
+body.dark-mode .order-card{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    box-shadow:none;
+
+}
+
+/* Order Top */
+
+body.dark-mode .order-top h4,
+body.dark-mode .order-top h5,
+body.dark-mode .order-top p,
+body.dark-mode .order-top span{
+
+    color:#ffffff !important;
+
+}
+
+/* Order Products */
+
+body.dark-mode .order-products{
+
+    color:#D1D5DB !important;
+
+}
+
+/* Order Bottom */
+
+body.dark-mode .order-bottom{
+
+    border-top:1px solid #444;
+
+    padding-top:20px;
+
+}
+
+body.dark-mode .order-bottom h4,
+body.dark-mode .order-bottom h5,
+body.dark-mode .order-bottom p,
+body.dark-mode .order-bottom span{
+
+    color:#ffffff !important;
+
+}
+
+/* Status Badges */
+
+body.dark-mode .badge{
+
+    color:#ffffff;
+
+}
+
+/* Buttons */
+
+body.dark-mode .order-card .btn-success{
+
+    background:#22C55E;
+
+    border:none;
+
+}
+
+body.dark-mode .order-card .btn-success:hover{
+
+    background:#16A34A;
+
+}
+
+body.dark-mode .order-card .btn-outline-success{
+
+    color:#22C55E;
+
+    border-color:#22C55E;
+
+}
+
+body.dark-mode .order-card .btn-outline-success:hover{
+
+    background:#22C55E;
+
+    color:#ffffff;
+
+}
+
+body.dark-mode .order-card .btn-outline-danger{
+
+    color:#FF6B6B;
+
+    border-color:#FF6B6B;
+
+}
+
+body.dark-mode .order-card .btn-outline-danger:hover{
+
+    background:#FF6B6B;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================
+   ORDER SUCCESS PAGE DARK MODE
+========================================== */
+
+/* Success Page */
+
+body.dark-mode .success-page{
+
+    background:#18181B !important;
+
+}
+
+/* Success Card */
+
+body.dark-mode .success-card{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    box-shadow:none;
+
+}
+
+/* Success Icon */
+
+body.dark-mode .success-icon{
+
+    color:#22C55E;
+
+}
+
+/* Heading */
+
+body.dark-mode .success-card h1{
+
+    color:#ffffff !important;
+
+}
+
+/* Paragraph */
+
+body.dark-mode .success-card p{
+
+    color:#D1D5DB !important;
+
+}
+
+/* Order Number */
+
+body.dark-mode .order-number{
+
+    background:#202124 !important;
+
+    color:#22C55E !important;
+
+    border:1px solid #3A3A3A;
+
+}
+
+/* Buttons */
+
+body.dark-mode .success-card .btn-success{
+
+    background:#22C55E;
+
+    border:none;
+
+}
+
+body.dark-mode .success-card .btn-success:hover{
+
+    background:#16A34A;
+
+}
+
+body.dark-mode .success-card .btn-outline-success{
+
+    color:#22C55E;
+
+    border-color:#22C55E;
+
+}
+
+body.dark-mode .success-card .btn-outline-success:hover{
+
+    background:#22C55E;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================
+   PRODUCT DETAILS PAGE DARK MODE
+========================================== */
+
+/* Product Details Page */
+
+body.dark-mode .product-details-page{
+
+    background:#18181B !important;
+
+}
+
+/* Product Image Box */
+
+body.dark-mode .product-image-box{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    box-shadow:none;
+
+}
+
+/* Product Information */
+
+body.dark-mode .product-details-page h1,
+body.dark-mode .product-details-page h2,
+body.dark-mode .product-details-page h3,
+body.dark-mode .product-details-page h4,
+body.dark-mode .product-details-page h5,
+body.dark-mode .product-details-page p{
+
+    color:#ffffff !important;
+
+}
+
+/* Price */
+
+body.dark-mode .price{
+
+    color:#22C55E !important;
+
+}
+
+/* Product Features */
+
+body.dark-mode .product-features li{
+
+    color:#D1D5DB !important;
+
+}
+
+/* Rating */
+
+body.dark-mode .rating{
+
+    color:#FFD54F !important;
+
+}
+
+/* Buttons */
+
+body.dark-mode .product-details-page .btn-success{
+
+    background:#22C55E;
+
+    border:none;
+
+}
+
+body.dark-mode .product-details-page .btn-success:hover{
+
+    background:#16A34A;
+
+}
+
+body.dark-mode .product-details-page .btn-outline-success{
+
+    color:#22C55E;
+
+    border-color:#22C55E;
+
+}
+
+body.dark-mode .product-details-page .btn-outline-success:hover{
+
+    background:#22C55E;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================
+   RELATED PRODUCTS
+========================================== */
+
+body.dark-mode .related-products{
+
+    background:#202124 !important;
+
+}
+
+body.dark-mode .related-card{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    box-shadow:none;
+
+}
+
+body.dark-mode .related-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.45);
+
+}
+
+body.dark-mode .related-card h4{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .related-card p{
+
+    color:#22C55E !important;
+
+}
+
+body.dark-mode .related-card .btn-success{
+
+    background:#22C55E;
+
+    border:none;
+
+}
+
+body.dark-mode .related-card .btn-success:hover{
+
+    background:#16A34A;
+
+}
+
+/* ==========================================
+   PROFILE PAGE DARK MODE
+========================================== */
+
+/* Profile Header */
+
+body.dark-mode .profile-header{
+
+    background:#202124 !important;
+
+}
+
+body.dark-mode .profile-header h1{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .profile-header p{
+
+    color:#D1D5DB !important;
+
+}
+
+/* Profile Page */
+
+body.dark-mode .profile-page{
+
+    background:#18181B !important;
+
+}
+
+/* Sidebar */
+
+body.dark-mode .profile-sidebar{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    box-shadow:none;
+
+}
+
+body.dark-mode .profile-sidebar h3,
+body.dark-mode .profile-sidebar h4,
+body.dark-mode .profile-sidebar p{
+
+    color:#ffffff !important;
+
+}
+
+/* Sidebar Menu */
+
+body.dark-mode .profile-sidebar ul li{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .profile-sidebar ul li:hover{
+
+    background:#22C55E !important;
+
+    color:#ffffff !important;
+
+}
+
+/* Dashboard Cards */
+
+body.dark-mode .dashboard-card{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    box-shadow:none;
+
+}
+
+body.dark-mode .dashboard-card h4{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .dashboard-card p{
+
+    color:#D1D5DB !important;
+
+}
+
+body.dark-mode .dashboard-icon{
+
+    color:#22C55E !important;
+
+}
+
+/* Buttons */
+
+body.dark-mode .dashboard-card .btn-success{
+
+    background:#22C55E;
+
+    border:none;
+
+}
+
+body.dark-mode .dashboard-card .btn-success:hover{
+
+    background:#16A34A;
+
+}
+
+body.dark-mode .dashboard-card .btn-outline-success{
+
+    color:#22C55E;
+
+    border-color:#22C55E;
+
+}
+
+body.dark-mode .dashboard-card .btn-outline-success:hover{
+
+    background:#22C55E;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================
+   CONTACT PAGE DARK MODE
+========================================== */
+
+/* Contact Header */
+
+body.dark-mode .contact-header{
+
+    background:#202124 !important;
+
+}
+
+body.dark-mode .contact-header h1{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .contact-header p{
+
+    color:#D1D5DB !important;
+
+}
+
+/* Contact Page */
+
+body.dark-mode .contact-page{
+
+    background:#18181B !important;
+
+}
+
+/* Contact Form */
+
+body.dark-mode .contact-form{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    box-shadow:none;
+
+}
+
+body.dark-mode .contact-form h3{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .contact-form label{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .contact-form .form-control{
+
+    background:#333333 !important;
+
+    color:#ffffff !important;
+
+    border:1px solid #555;
+
+}
+
+body.dark-mode .contact-form .form-control::placeholder{
+
+    color:#BBBBBB;
+
+}
+
+body.dark-mode .contact-form textarea{
+
+    background:#333333 !important;
+
+    color:#ffffff !important;
+
+    border:1px solid #555;
+
+}
+
+/* Contact Info */
+
+body.dark-mode .contact-info{
+
+    background:#2A2A2A !important;
+
+    border:1px solid #3A3A3A;
+
+    box-shadow:none;
+
+}
+
+body.dark-mode .contact-info h3{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .contact-info p{
+
+    color:#D1D5DB !important;
+
+}
+
+body.dark-mode .contact-info i{
+
+    color:#22C55E !important;
+
+}
+
+/* Buttons */
+
+body.dark-mode .contact-form .btn-success{
+
+    background:#22C55E;
+
+    border:none;
+
+}
+
+body.dark-mode .contact-form .btn-success:hover{
+
+    background:#16A34A;
+
+}
+
+/* ==========================================
+   ABOUT PAGE DARK MODE
+========================================== */
+
+/* About Header */
+
+body.dark-mode .about-header{
+
+    background:#202124 !important;
+
+}
+
+body.dark-mode .about-header h1{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .about-header p{
+
+    color:#D1D5DB !important;
+
+}
+
+/* About Page */
+
+body.dark-mode .about-page{
+
+    background:#18181B !important;
+
+}
+
+/* About Image */
+
+body.dark-mode .about-page img{
+
+    box-shadow:none;
+
+    border:1px solid #3A3A3A;
+
+}
+
+/* Headings */
+
+body.dark-mode .about-page h2{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .about-page h3{
+
+    color:#22C55E !important;
+
+}
+
+/* Paragraph */
+
+body.dark-mode .about-page p{
+
+    color:#D1D5DB !important;
+
+}

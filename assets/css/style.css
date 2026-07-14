@@ -28,3 +28,60 @@ a{
 ul{
     list-style:none;
 }
+
+/* ================= TOAST ================= */
+
+.toast-notification {
+
+    position: fixed;
+
+    top: 20px;
+
+    right: 20px;
+
+    background: #198754;
+
+    color: white;
+
+    padding: 14px 20px;
+
+    border-radius: 10px;
+
+    font-weight: 500;
+
+    opacity: 0;
+
+    transform: translateX(120%);
+
+    transition: all .4s ease;
+
+    z-index: 9999;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
+
+}
+
+.toast-notification.show {
+
+    opacity: 1;
+
+    transform: translateX(0);
+
+}
+
+/* ================= WISHLIST HEART ================= */
+
+.heart-icon{
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.heart-icon.active{
+
+    color:red;
+
+}
+

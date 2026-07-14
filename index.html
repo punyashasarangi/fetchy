@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
 
 </head>
 
@@ -77,9 +78,10 @@
                     <div class="input-group">
 
                         <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Search for groceries...">
+                         type="text"
+                         id="search-input"
+                         class="form-control"
+                         placeholder="Search products...">
 
                         <button class="btn btn-success">
 
@@ -104,36 +106,56 @@
                     </li>
 
                     <li>
+                        <a href="products.html">Products</a>
+                    </li>
+
+                    <li>
                         <a href="offers.html">Offers</a>
                     </li>
 
                     <li>
-                        <a href="#">
-                            <i class="bi bi-heart"></i>
-                        </a>
-                    </li>
 
-                <li>
+    <a href="wishlist.html" class="wishlist-link">
 
-                   <li>
+        <i class="bi bi-heart"></i>
 
-                    <a href="cart.html" class="cart-link">
+        <span id="wishlist-count" class="cart-badge">0</span>
 
-                    <i class="bi bi-cart3" id="cart-icon"></i>
+    </a>
 
-                    <span id="cart-count" class="cart-badge">0</span>
+  </li>
 
-                   </a>
+<li>
 
-                </li>
+    <a href="cart.html" class="cart-link">
 
-               </li>
+        <i class="bi bi-cart3" id="cart-icon"></i>
+
+        <span id="cart-count" class="cart-badge">0</span>
+
+    </a>
+
+</li>
 
                     <li>
-                        <a href="login.html" class="login-btn">
-                            Login
-                        </a>
-                    </li>
+
+    <button id="theme-toggle" class="theme-btn">
+
+        <i class="bi bi-moon-fill"></i>
+
+    </button>
+
+</li>
+
+<li>
+
+    <a href="login.html" class="login-btn">
+
+        Login
+
+    </a>
+
+</li>
 
                 </ul>
 
@@ -236,9 +258,16 @@
             <h2>Shop by Categories</h2>
 
             <p>Everything you need delivered fresh to your doorstep.</p>
+         
+            <div class="hero-buttons">
 
+                        <a href="categories.html" class="btn btn-success btn-lg">
+
+                            Go to categories
+
+                        </a>
         </div>
-
+        </div>
         <div class="row g-4 mt-3">
 
             <!-- Fruits -->
@@ -935,7 +964,7 @@
 
                     <li><a href="#">FAQs</a></li>
 
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="about.html">About us</a></li>
 
                     <li><a href="#">Terms & Conditions</a></li>
 
@@ -989,9 +1018,16 @@
 
 </footer>
 
-   <!-- JavaScript -->
+<!-- Toast Notification -->
 
-<script src="assets/js/cart.js"></script>
+<div id="toast" class="toast-notification">
+
+    <span id="toast-message"></span>
+
+</div>
+
+<script src="assets/js/index.js"></script>
+<script src="assets/js/theme.js"></script>
 
 <!-- Bootstrap JS -->
 

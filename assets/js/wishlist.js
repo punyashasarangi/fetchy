@@ -1,16 +1,34 @@
 // ================= GET DATA =================
 
 let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 // ================= SELECT ELEMENTS =================
 
 const wishlistContainer = document.getElementById("wishlist-container");
-
 const wishlistCount = document.getElementById("wishlist-count");
-
 const cartCount = document.getElementById("cart-count");
+
+// ================= TOAST =================
+
+function showToast(message) {
+
+    const toast = document.getElementById("toast");
+    const toastMessage = document.getElementById("toast-message");
+
+    if (!toast || !toastMessage) return;
+
+    toastMessage.innerText = message;
+
+    toast.classList.add("show");
+
+    setTimeout(() => {
+
+        toast.classList.remove("show");
+
+    }, 2500);
+
+}
 
 // ================= UPDATE BADGES =================
 
@@ -130,11 +148,15 @@ function removeWishlistItem() {
 
             const index = button.dataset.index;
 
+            const productName = wishlist[index].name;
+
             wishlist.splice(index, 1);
 
             localStorage.setItem("wishlist", JSON.stringify(wishlist));
 
             updateWishlistBadge();
+
+            showToast(`${productName} removed from wishlist ❤️`);
 
             displayWishlist();
 
@@ -189,6 +211,8 @@ function addWishlistToCart() {
             updateCartBadge();
 
             updateWishlistBadge();
+
+            showToast(`${product.name} moved to cart 🛒`);
 
             displayWishlist();
 

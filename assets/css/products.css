@@ -114,3 +114,57 @@
     text-decoration:line-through;
     margin-left:10px;
 }
+
+.category-list a.active {
+
+    background: #198754;
+
+    color: white;
+
+    border-radius: 8px;
+
+    padding: 8px 12px;
+
+    display: block;
+
+    transition: 0.3s;
+
+}
+
+.category-list a {
+
+    display: block;
+
+    padding: 8px 12px;
+
+    text-decoration: none;
+
+    color: #333;
+
+    transition: 0.3s;
+
+}
+
+.category-list a:hover {
+
+    background: #f2f2f2;
+
+    border-radius: 8px;
+
+}
+
+/* ================= PRODUCT MODAL IMAGE ================= */
+
+.product-modal-image{
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.product-modal-image:hover{
+
+    transform: scale(1.05);
+
+}
