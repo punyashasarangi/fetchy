@@ -66,7 +66,10 @@
 }
 
 .product-card:hover{
+
     transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(34,197,94,.18);
+
 }
 
 .product-image{
@@ -75,6 +78,13 @@
     object-fit:contain;
     margin:auto;
     display:block;
+    transition:.3s;
+}
+
+.product-card:hover .product-image{
+
+    transform:scale(1.08);
+
 }
 
 .discount{
@@ -166,5 +176,164 @@
 .product-modal-image:hover{
 
     transform: scale(1.05);
+
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width:992px){
+
+    .products-hero h1{
+
+        font-size:38px;
+
+    }
+
+    .sidebar{
+
+        margin-bottom:30px;
+
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+    .products-hero{
+
+        padding:40px 0;
+
+    }
+
+    .products-hero h1{
+
+        font-size:32px;
+
+    }
+
+    .products-hero p{
+
+        font-size:16px;
+
+    }
+
+    .products-page{
+
+        padding:40px 0;
+
+    }
+
+    .sidebar{
+
+        padding:20px;
+
+        margin-bottom:25px;
+
+    }
+
+    .product-card{
+
+        padding:18px;
+
+    }
+
+    .product-image{
+
+        width:140px;
+        height:140px;
+
+    }
+
+    .price{
+
+        font-size:24px;
+
+    }
+
+    .price span{
+
+        font-size:16px;
+
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:576px){
+
+    .products-hero h1{
+
+        font-size:28px;
+
+    }
+
+    .product-image{
+
+        width:120px;
+        height:120px;
+
+    }
+
+    .product-card h5{
+
+        font-size:18px;
+
+    }
+
+    .discount{
+
+        font-size:11px;
+
+        padding:4px 10px;
+
+    }
+
+    .heart-icon{
+
+        font-size:20px;
+
+    }
+
+}
+
+
+/* ================= EXTRA SMALL MOBILE ================= */
+
+@media (max-width:400px){
+
+    .product-image{
+
+        width:100px;
+        height:100px;
+
+    }
+
+}
+
+
+#sort-products{
+
+    border-radius:10px;
+
+}
+
+#modal-image{
+
+    margin-bottom:20px;
+
+}
+
+@media (max-width:576px){
+
+    #sort-products{
+
+        width:100% !important;
+
+    }
 
 }
