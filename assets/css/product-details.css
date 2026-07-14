@@ -91,6 +91,7 @@
 .related-card:hover{
 
     transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(34,197,94,.18);
 
 }
 
@@ -101,6 +102,8 @@
     object-fit:contain;
 
     margin-bottom:20px;
+
+    transition:.3s;
 
 }
 
@@ -126,13 +129,145 @@
 
 }
 
-/* ================= RESPONSIVE ================= */
+.main-product-image{
 
-@media(max-width:768px){
+    transition:.3s;
+
+}
+
+.main-product-image:hover{
+
+    transform:scale(1.05);
+
+}
+
+.related-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width:992px){
+
+    .product-details-page{
+
+        padding:60px 0;
+
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
 
     .product-image-box{
 
         margin-bottom:30px;
+
+        padding:25px;
+
+    }
+
+    .main-product-image{
+
+        max-height:280px;
+
+    }
+
+    #product-name{
+
+        font-size:32px;
+
+    }
+
+    #product-price{
+
+        font-size:28px;
+
+    }
+
+    .product-features li{
+
+        font-size:16px;
+
+    }
+
+    .product-details-page .btn{
+
+        width:100%;
+        margin-top:15px;
+
+    }
+
+    #buy-now{
+
+        margin-left:0 !important;
+
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:576px){
+
+    #product-name{
+
+        font-size:28px;
+
+    }
+
+    #product-price{
+
+        font-size:24px;
+
+    }
+
+    .rating{
+
+        font-size:16px;
+
+    }
+
+    .main-product-image{
+
+        max-height:230px;
+
+    }
+
+    .related-products{
+
+        padding:50px 0;
+
+    }
+
+    .related-card{
+
+        padding:20px;
+
+    }
+
+    .related-card img{
+
+        height:140px;
+
+    }
+
+}
+
+
+/* ================= EXTRA SMALL MOBILE ================= */
+
+@media (max-width:400px){
+
+    .main-product-image{
+
+        max-height:180px;
 
     }
 
