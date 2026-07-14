@@ -38,7 +38,7 @@ href="assets/css/categories.css">
 
 <!-- Copy the Navbar from index.html -->
 
-  <nav class="navbar">
+   <nav class="navbar">
 
         <div class="container d-flex justify-content-between align-items-center">
 
@@ -54,9 +54,95 @@ href="assets/css/categories.css">
 
             </div>
 
+            <button class="menu-toggle">
+    <i class="bi bi-list"></i>
+</button>
+
+    <div class="mobile-menu">
+
+    <a href="index.html">Home</a>
+    <a href="categories.html">Categories</a>
+    <a href="products.html">Products</a>
+    <a href="offers.html">Offers</a>
+    <a href="wishlist.html">Wishlist</a>
+    <a href="cart.html">Cart</a>
+    <a href="login.html">Login</a>
+
+</div>
+
             <!-- Right Side -->
 
             <div class="right-navbar">
+
+                <!-- Location -->
+
+                <div class="location">
+
+                    <i class="bi bi-geo-alt-fill"></i>
+
+                    <div>
+
+                        <span class="deliver-text">
+                            Deliver To
+                        </span>
+
+                        <h6>Bhubaneswar</h6>
+
+                    </div>
+
+                </div>
+                         
+        <!-- Navigation -->
+
+                <ul class="nav-menu">
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="categories.html">Categories</a>
+                    </li>
+
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+
+                    <li>
+                        <a href="offers.html">Offers</a>
+                    </li>
+
+                    <li>
+
+    <a href="wishlist.html" class="wishlist-link">
+
+        <i class="bi bi-heart"></i>
+
+        <span id="wishlist-count" class="cart-badge">0</span>
+
+    </a>
+
+  </li>
+
+<li>
+
+    <a href="cart.html" class="cart-link">
+
+        <i class="bi bi-cart3" id="cart-icon"></i>
+
+        <span id="cart-count" class="cart-badge">0</span>
+
+    </a>
+
+</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
 
 <section class="category-header">
 
@@ -384,6 +470,19 @@ Shop Now
 <script src="assets/js/theme.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+const menuToggle = document.querySelector(".menu-toggle");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+menuToggle.addEventListener("click", () => {
+
+    mobileMenu.classList.toggle("active");
+
+});
+
+</script>
 
 </body>
 
