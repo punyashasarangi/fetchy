@@ -507,3 +507,70 @@
     color:#fff;
 
 }
+
+/* Hamburger Menu */
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: transparent;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+
+      .right-navbar{
+    display: none;
+}
+
+   .navbar .container{
+    justify-content: space-between;
+}
+
+    .menu-toggle{
+        display:block;
+    }
+
+}
+
+/* ================= MOBILE MENU ================= */
+
+.mobile-menu{
+
+    display:none;
+    flex-direction:column;
+    width:100%;
+    background:#fff;
+    padding:20px;
+    gap:18px;
+    margin-top:15px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.mobile-menu a{
+
+    text-decoration:none;
+    color:#333;
+    font-size:17px;
+    font-weight:600;
+    padding:12px 15px;
+    border-radius:10px;
+    transition:0.3s;
+
+}
+
+.mobile-menu a:hover{
+
+    background:#22C55E;
+    color:#fff;
+
+}
+
+.mobile-menu.active{
+
+    display:flex;
+
+}

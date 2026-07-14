@@ -847,3 +847,360 @@
 
     transition: all 0.8s ease-in-out;
 }
+
+/* ================= HERO SECTION RESPONSIVE ================= */
+
+/* Tablet */
+
+@media (max-width:992px){
+
+    .hero{
+
+        text-align:center;
+        padding:60px 0;
+
+    }
+
+    .hero-title{
+
+        font-size:42px;
+
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .hero-title{
+
+        font-size:34px;
+
+    }
+
+    .hero-description{
+
+        font-size:16px;
+        line-height:28px;
+
+    }
+
+    .hero-buttons{
+
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+
+    }
+
+    .hero-buttons .btn{
+
+        width:100%;
+        margin:0 !important;
+
+    }
+
+    .hero-image{
+
+        width:80%;
+        margin-top:30px;
+
+    }
+
+}
+
+
+/* Small Mobile */
+
+@media (max-width:576px){
+
+    .hero-info{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+    .info-box{
+
+        width:100%;
+
+    }
+
+}
+
+/* ================= CATEGORIES RESPONSIVE ================= */
+
+/* Tablet */
+
+@media (max-width:992px){
+
+    .section-title h2{
+
+        font-size:32px;
+
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .categories{
+
+        padding:60px 0;
+
+    }
+
+    .section-title h2{
+
+        font-size:28px;
+
+    }
+
+    .section-title p{
+
+        font-size:15px;
+
+    }
+
+    .category-card{
+
+        padding:25px 15px;
+
+    }
+
+    .category-card img{
+
+        width:90px;
+        height:90px;
+
+    }
+
+}
+
+
+/* Small Mobile */
+
+@media (max-width:576px){
+
+    .category-card img{
+
+        width:75px;
+        height:75px;
+
+    }
+
+    .category-card h5{
+
+        font-size:16px;
+
+    }
+
+}
+
+/* ================= FEATURED PRODUCTS RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+    .product-card{
+
+        height:100%;
+
+    }
+
+    .product-card img{
+
+        width:130px;
+        height:130px;
+
+    }
+
+    .price{
+
+        font-size:20px;
+
+    }
+
+}
+
+
+@media (max-width:576px){
+
+    .product-card img{
+
+        width:110px;
+        height:110px;
+
+    }
+
+}
+
+/* ================= DEALS RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+    .deal-card{
+
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+
+    }
+
+    .deal-content{
+
+        width:100%;
+
+    }
+
+    .deal-card img{
+
+        width:140px;
+        height:140px;
+
+    }
+
+}
+
+/* ================= WHY US RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+    .why-card{
+
+        padding:25px 20px;
+
+    }
+
+    .why-card i{
+
+        font-size:45px;
+
+    }
+
+    .why-card h4{
+
+        font-size:22px;
+
+    }
+
+}
+
+/* ================= TESTIMONIALS RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+    .testimonial-card{
+
+        padding:25px 20px;
+
+    }
+
+    .stars{
+
+        font-size:18px;
+
+    }
+
+}
+
+
+@media (max-width:576px){
+
+    .testimonial-card p{
+
+        font-size:15px;
+        line-height:25px;
+
+    }
+
+}
+
+/* ================= DOWNLOAD APP RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+    .download-app{
+
+        text-align:center;
+        padding:60px 0;
+
+    }
+
+    .download-app h2{
+
+        font-size:32px;
+
+    }
+
+    .download-app p{
+
+        font-size:16px;
+        line-height:28px;
+
+    }
+
+    .app-buttons{
+
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+
+    }
+
+    .app-buttons .btn{
+
+        width:100%;
+        margin:0 !important;
+
+    }
+
+    .app-image{
+
+        width:80%;
+        margin-top:30px;
+
+    }
+
+}
+
+/* ================= FOOTER RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+    .footer{
+
+        text-align:center;
+
+    }
+
+    .footer .row{
+
+        gap:30px;
+
+    }
+
+    .social-icons{
+
+        display:flex;
+        justify-content:center;
+
+    }
+
+}
+
+
+@media (max-width:576px){
+
+    .footer-logo{
+
+        font-size:32px;
+
+    }
+
+}
