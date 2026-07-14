@@ -41,12 +41,28 @@
     padding:20px;
     border-radius:15px;
     box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:0.3s;
 }
+
+.cart-item:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(34,197,94,.18);
+
+}
+ 
 
 .cart-item img{
     width:100px;
     height:100px;
     object-fit:contain;
+    transition:0.3s;
+}
+
+.cart-item:hover img{
+
+    transform:scale(1.08);
+
 }
 
 .cart-details{
@@ -140,21 +156,129 @@
     border-radius:10px;
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================= TABLET ================= */
 
-@media(max-width:768px){
+@media (max-width:992px){
 
-    .cart-item{
-        flex-direction:column;
-        text-align:center;
-    }
+    .order-summary{
 
-    .cart-details{
-        margin:20px 0;
-    }
+        margin-top:30px;
+        position:static;
 
-    .quantity{
-        margin-bottom:20px;
     }
 
 }
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+    .cart-header{
+
+        padding:50px 0;
+
+    }
+
+    .cart-header h1{
+
+        font-size:32px;
+
+    }
+
+    .cart-header p{
+
+        font-size:16px;
+
+    }
+
+    .cart-page{
+
+        padding:50px 0;
+
+    }
+
+    .cart-item{
+
+        flex-direction:column;
+        text-align:center;
+        padding:25px;
+
+    }
+
+    .cart-item img{
+
+        width:90px;
+        height:90px;
+
+    }
+
+    .cart-details{
+
+        margin:20px 0;
+
+    }
+
+    .quantity{
+
+        margin-bottom:20px;
+
+    }
+
+    .order-summary{
+
+        margin-top:30px;
+        position:static;
+
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:576px){
+
+    .cart-header h1{
+
+        font-size:28px;
+
+    }
+
+    .cart-item img{
+
+        width:80px;
+        height:80px;
+
+    }
+
+    .summary-row{
+
+        font-size:15px;
+
+    }
+
+    .total{
+
+        font-size:20px;
+
+    }
+
+}
+
+
+/* ================= EXTRA SMALL MOBILE ================= */
+
+@media (max-width:400px){
+
+    .qty-btn{
+
+        width:35px;
+        height:35px;
+
+        font-size:18px;
+
+    }
+
+}
+
