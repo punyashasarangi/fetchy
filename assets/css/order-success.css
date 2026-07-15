@@ -84,24 +84,103 @@ padding:12px 30px;
 
 }
 
-@media(max-width:768px){
+/* ================= TABLET ================= */
 
-.success-card{
+@media (max-width:992px){
 
-padding:35px 20px;
+    .success-card{
 
-}
+        padding:50px 35px;
 
-.success-card h1{
-
-font-size:30px;
+    }
 
 }
 
-.success-icon{
 
-font-size:70px;
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+    .success-page{
+
+        padding:50px 20px;
+
+    }
+
+    .success-card{
+
+        padding:35px 20px;
+
+    }
+
+    .success-card h1{
+
+        font-size:30px;
+
+    }
+
+    .success-card p{
+
+        font-size:16px;
+        line-height:28px;
+
+    }
+
+    .success-icon{
+
+        font-size:70px;
+
+    }
 
 }
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:576px){
+
+    .success-card h1{
+
+        font-size:26px;
+
+    }
+
+    .order-number{
+
+        font-size:18px;
+
+    }
+
+    .success-card .btn{
+
+        width:100%;
+        margin-top:15px;
+
+    }
+
+    .btn-outline-success{
+
+        margin-left:0 !important;
+
+    }
+
+}
+
+
+/* ================= EXTRA SMALL MOBILE ================= */
+
+@media (max-width:400px){
+
+    .success-card{
+
+        padding:25px 15px;
+
+    }
+
+    .success-icon{
+
+        font-size:60px;
+
+    }
 
 }

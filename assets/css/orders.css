@@ -68,17 +68,112 @@ align-items:center;
 
 }
 
-@media(max-width:768px){
+.orders-header h1{
 
-.order-top,
-.order-bottom{
-
-flex-direction:column;
-
-gap:15px;
-
-text-align:center;
+    font-size:45px;
+    font-weight:700;
 
 }
+
+.orders-header p{
+
+    color:#666;
+    font-size:18px;
+
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width:992px){
+
+    .order-card{
+
+        padding:25px;
+
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+    .orders-header{
+
+        padding:50px 0;
+
+    }
+
+    .orders-header h1{
+
+        font-size:32px;
+
+    }
+
+    .orders-header p{
+
+        font-size:16px;
+
+    }
+
+    .orders-page{
+
+        padding:50px 0;
+
+    }
+
+    .order-top,
+    .order-bottom{
+
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:576px){
+
+    .orders-header h1{
+
+        font-size:28px;
+
+    }
+
+    .order-card{
+
+        padding:20px;
+
+    }
+
+    .order-top h4{
+
+        font-size:20px;
+
+    }
+
+    .order-bottom h5{
+
+        font-size:18px;
+
+    }
+
+}
+
+
+/* ================= EXTRA SMALL MOBILE ================= */
+
+@media (max-width:400px){
+
+    .order-card{
+
+        padding:15px;
+
+    }
 
 }
