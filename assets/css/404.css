@@ -107,3 +107,91 @@
     }
 
 }
+
+/* ================= TABLET ================= */
+
+@media (max-width:992px){
+
+    .error-card{
+
+        max-width:600px;
+
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+    .error-card{
+
+        padding:35px 20px;
+
+    }
+
+    .error-image{
+
+        width:220px;
+
+    }
+
+    .error-card h1{
+
+        font-size:70px;
+
+    }
+
+    .error-card h2{
+
+        font-size:28px;
+
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:576px){
+
+    .error-card h1{
+
+        font-size:60px;
+
+    }
+
+    .error-card h2{
+
+        font-size:24px;
+
+    }
+
+    .error-card p{
+
+        font-size:16px;
+
+    }
+
+    .error-card .btn{
+
+        width:100%;
+        margin-bottom:15px;
+
+    }
+
+}
+
+
+/* ================= EXTRA SMALL MOBILE ================= */
+
+@media (max-width:400px){
+
+    .error-card{
+
+        padding:25px 15px;
+
+    }
+
+}

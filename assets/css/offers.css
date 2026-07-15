@@ -118,11 +118,101 @@
 
 }
 
-@media(max-width:768px){
+/* ================= TABLET ================= */
+
+@media (max-width:992px){
+
+    .offer-card{
+
+        padding:22px;
+
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+    .offer-header{
+
+        padding:50px 0;
+
+    }
+
+    .offer-header h1{
+
+        font-size:32px;
+
+    }
+
+    .offer-header p{
+
+        font-size:16px;
+
+    }
+
+    .offer-page{
+
+        padding:50px 0;
+
+    }
 
     .offer-card{
 
         margin-bottom:20px;
+
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:576px){
+
+    .offer-header h1{
+
+        font-size:28px;
+
+    }
+
+    .offer-card{
+
+        padding:20px;
+
+    }
+
+    .offer-card img{
+
+        height:140px;
+
+    }
+
+    .discount-badge{
+
+        font-size:12px;
+        padding:6px 12px;
+
+    }
+
+    .offer-card .btn{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* ================= EXTRA SMALL MOBILE ================= */
+
+@media (max-width:400px){
+
+    .offer-card{
+
+        padding:15px;
 
     }
 

@@ -70,12 +70,106 @@ font-weight:700;
 
 }
 
-@media(max-width:768px){
+/* ================= TABLET ================= */
 
-.about-page img{
+@media (max-width:992px){
 
-margin-bottom:30px;
+    .about-page{
+
+        padding:60px 0;
+
+    }
 
 }
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+    .about-header{
+
+        padding:50px 0;
+
+    }
+
+    .about-header h1{
+
+        font-size:32px;
+
+    }
+
+    .about-header p{
+
+        font-size:16px;
+
+    }
+
+    .about-page{
+
+        padding:50px 0;
+
+    }
+
+    .about-page img{
+
+        margin-bottom:30px;
+
+    }
+
+    .about-page h2{
+
+        font-size:32px;
+
+        text-align:center;
+
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:576px){
+
+    .about-header h1{
+
+        font-size:28px;
+
+    }
+
+    .about-page h2{
+
+        font-size:28px;
+
+    }
+
+    .about-page p{
+
+        font-size:16px;
+        line-height:28px;
+        text-align:center;
+
+    }
+
+    .about-page h3{
+
+        font-size:28px;
+        text-align:center;
+
+    }
+
+}
+
+
+/* ================= EXTRA SMALL MOBILE ================= */
+
+@media (max-width:400px){
+
+    .about-page{
+
+        padding:40px 0;
+
+    }
 
 }

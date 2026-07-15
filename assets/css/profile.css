@@ -142,13 +142,101 @@
 
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================= TABLET ================= */
 
-@media(max-width:768px){
+@media (max-width:992px){
 
     .profile-sidebar{
 
         margin-bottom:30px;
+
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+    .profile-header{
+
+        padding:50px 0;
+
+    }
+
+    .profile-header h1{
+
+        font-size:32px;
+
+    }
+
+    .profile-page{
+
+        padding:50px 0;
+
+    }
+
+    .profile-sidebar{
+
+        margin-bottom:30px;
+
+    }
+
+    .dashboard-card{
+
+        text-align:center;
+
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:576px){
+
+    .profile-header h1{
+
+        font-size:28px;
+
+    }
+
+    .profile-image img{
+
+        width:100px;
+        height:100px;
+
+    }
+
+    .dashboard-icon{
+
+        font-size:38px;
+
+    }
+
+    .dashboard-card{
+
+        padding:25px;
+
+    }
+
+    .dashboard-card .btn{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* ================= EXTRA SMALL MOBILE ================= */
+
+@media (max-width:400px){
+
+    .dashboard-card{
+
+        padding:20px;
 
     }
 
