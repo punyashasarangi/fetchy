@@ -116,14 +116,50 @@
 
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================= TABLET ================= */
 
-@media(max-width:768px){
+@media (max-width:992px){
+
+    .wishlist-item{
+
+        padding:25px;
+
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+    .wishlist-header{
+
+        padding:50px 0;
+
+    }
+
+    .wishlist-header h1{
+
+        font-size:32px;
+
+    }
+
+    .wishlist-header p{
+
+        font-size:16px;
+
+    }
+
+    .wishlist-page{
+
+        padding:50px 0;
+
+    }
 
     .wishlist-item{
 
         flex-direction:column;
-
         text-align:center;
 
     }
@@ -137,8 +173,46 @@
     .wishlist-buttons{
 
         width:100%;
-
         flex-direction:column;
+
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:576px){
+
+    .wishlist-header h1{
+
+        font-size:28px;
+
+    }
+
+    .wishlist-image{
+
+        width:80px;
+        height:80px;
+
+    }
+
+    .wishlist-details h4{
+
+        font-size:22px;
+
+    }
+
+}
+
+
+/* ================= EXTRA SMALL MOBILE ================= */
+
+@media (max-width:400px){
+
+    .wishlist-item{
+
+        padding:15px;
 
     }
 

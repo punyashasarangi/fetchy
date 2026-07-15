@@ -574,3 +574,61 @@
     display:flex;
 
 }
+
+.mobile-icons{
+
+    display:none;
+
+}
+
+.mobile-location{
+
+    display:none;
+
+}
+
+.mobile-search{
+
+    display:none;
+
+}
+
+@media (max-width:768px){
+
+    .right-navbar{
+
+        display:none;
+
+    }
+
+    .mobile-icons{
+
+        display:flex;
+
+        justify-content:center;
+        align-items:center;
+        gap:25px;
+
+        margin-top:20px;
+
+    }
+
+    .mobile-location{
+
+        display:block;
+
+        text-align:center;
+
+        margin-top:20px;
+
+    }
+
+    .mobile-search{
+
+        display:block;
+
+        margin-top:20px;
+
+    }
+
+}
