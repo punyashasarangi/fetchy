@@ -251,6 +251,28 @@ if (searchForm && searchInput) {
 
 }
 
+// ================= MOBILE HOME SEARCH =================
+
+const mobileSearchInput = document.getElementById("mobile-search-input");
+const mobileSearchBtn = document.getElementById("mobile-search-btn");
+
+if (mobileSearchInput && mobileSearchBtn) {
+
+    mobileSearchBtn.addEventListener("click", () => {
+
+        const keyword = mobileSearchInput.value.trim();
+
+        if (keyword !== "") {
+
+            window.location.href =
+                `products.html?search=${encodeURIComponent(keyword)}`;
+
+        }
+
+    });
+
+}
+
 // ================= VIEW DETAILS =================
 
 const viewButtons = document.querySelectorAll(".view-details");
