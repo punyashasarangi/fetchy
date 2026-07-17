@@ -1,51 +1,71 @@
 // ================= GET ELEMENTS =================
 
 const addCartButtons = document.querySelectorAll(".add-cart");
-
 const heartButtons = document.querySelectorAll(".heart-icon");
-
-const cartCount = document.getElementById("cart-count");
-
-const wishlistCount = document.getElementById("wishlist-count");
 
 // ================= GET LOCAL STORAGE =================
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
 let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 
-// ================= UPDATE BADGES =================
+// ================= UPDATE CART BADGE =================
 
 function updateCartBadge() {
 
-    if (cartCount) {
+    const totalItems = cart.reduce((sum, item) => {
 
-        cartCount.innerText = cart.length;
+        return sum + (item.quantity || 1);
+
+    }, 0);
+
+    const desktopCart = document.getElementById("cart-count");
+    const mobileCart = document.getElementById("cart-count-mobile");
+
+    if (desktopCart) {
+
+        desktopCart.innerText = totalItems;
+
+    }
+
+    if (mobileCart) {
+
+        mobileCart.innerText = totalItems;
 
     }
 
 }
+
+// ================= UPDATE WISHLIST BADGE =================
 
 function updateWishlistBadge() {
 
-    if (wishlistCount) {
+    const desktopWishlist = document.getElementById("wishlist-count");
+    const mobileWishlist = document.getElementById("wishlist-count-mobile");
 
-        wishlistCount.innerText = wishlist.length;
+    if (desktopWishlist) {
+
+        desktopWishlist.innerText = wishlist.length;
+
+    }
+
+    if (mobileWishlist) {
+
+        mobileWishlist.innerText = wishlist.length;
 
     }
 
 }
 
-updateCartBadge();
+// Update badges when page loads
 
+updateCartBadge();
 updateWishlistBadge();
 
-// ================= TOAST =================
+// ================= TOAST NOTIFICATION =================
 
 function showToast(message) {
 
     const toast = document.getElementById("toast");
-
     const toastMessage = document.getElementById("toast-message");
 
     if (!toast || !toastMessage) return;
@@ -87,11 +107,8 @@ addCartButtons.forEach((button) => {
         const product = {
 
             name: productName,
-
             price: productPrice,
-
             image: productImage,
-
             quantity: 1
 
         };
@@ -106,9 +123,7 @@ addCartButtons.forEach((button) => {
 
             existingProduct.quantity++;
 
-        }
-
-        else {
+        } else {
 
             cart.push(product);
 
@@ -132,14 +147,12 @@ heartButtons.forEach((heart) => {
 
     const productName = productCard.querySelector("h5").innerText;
 
-    // Fill heart if already in wishlist
+    // Fill heart if already exists in wishlist
 
     if (wishlist.some(item => item.name === productName)) {
 
         heart.classList.remove("bi-heart");
-
         heart.classList.add("bi-heart-fill");
-
         heart.classList.add("active");
 
     }
@@ -148,7 +161,7 @@ heartButtons.forEach((heart) => {
 
     heart.addEventListener("click", () => {
 
-        // Always get latest wishlist
+        // Get latest wishlist
 
         wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 
@@ -167,9 +180,7 @@ heartButtons.forEach((heart) => {
         const product = {
 
             name: productName,
-
             price: productPrice,
-
             image: productImage
 
         };
@@ -180,31 +191,31 @@ heartButtons.forEach((heart) => {
 
         );
 
+        // Add to wishlist
+
         if (existingIndex === -1) {
 
             wishlist.push(product);
 
-            showToast(`${product.name} added to wishlist ❤️`);
-
             heart.classList.remove("bi-heart");
-
             heart.classList.add("bi-heart-fill");
-
             heart.classList.add("active");
 
+            showToast(`${product.name} added to wishlist ❤️`);
+
         }
+
+        // Remove from wishlist
 
         else {
 
             wishlist.splice(existingIndex, 1);
 
-            showToast(`${product.name} removed from wishlist 💔`);
-
             heart.classList.remove("bi-heart-fill");
-
             heart.classList.add("bi-heart");
-
             heart.classList.remove("active");
+
+            showToast(`${product.name} removed from wishlist 💔`);
 
         }
 
@@ -219,7 +230,6 @@ heartButtons.forEach((heart) => {
 // ================= HOME SEARCH =================
 
 const searchInput = document.getElementById("search-input");
-
 const searchForm = document.querySelector(".search-box");
 
 if (searchForm && searchInput) {

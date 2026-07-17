@@ -38,9 +38,27 @@ function showToast(message) {
 
 function updateCartBadge() {
 
-    if (cartCount) {
+    const totalItems = cart.reduce((sum, item) => {
 
-        cartCount.innerText = cart.length;
+        return sum + item.quantity;
+
+    }, 0);
+
+
+    const desktopBadge = document.getElementById("cart-count");
+
+    const mobileBadge = document.getElementById("cart-count-mobile");
+
+
+    if (desktopBadge) {
+
+        desktopBadge.innerText = totalItems;
+
+    }
+
+    if (mobileBadge) {
+
+        mobileBadge.innerText = totalItems;
 
     }
 
@@ -276,38 +294,51 @@ if (sortSelect) {
 }
 
 // ================= WISHLIST =================
-
 // Select all heart icons
 
 const heartButtons = document.querySelectorAll(".heart-icon");
 
-// Wishlist badge
-
-const wishlistCount = document.getElementById("wishlist-count");
-
-// Get wishlist
+// Get wishlist from Local Storage
 
 let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 
-// Update badge
 
-if (wishlistCount) {
+// ================= UPDATE WISHLIST BADGE =================
 
-    wishlistCount.innerText = wishlist.length;
+function updateWishlistBadge() {
+
+    const desktopBadge = document.getElementById("wishlist-count");
+
+    const mobileBadge = document.getElementById("wishlist-count-mobile");
+
+    if (desktopBadge) {
+
+        desktopBadge.innerText = wishlist.length;
+
+    }
+
+    if (mobileBadge) {
+
+        mobileBadge.innerText = wishlist.length;
+
+    }
 
 }
 
-// Heart click
+// Update badge when page loads
+
+updateWishlistBadge();
+
+
+// ================= HEART CLICK =================
 
 heartButtons.forEach((heart) => {
-
-    // Product Card
 
     const productCard = heart.closest(".product-card");
 
     const productName = productCard.querySelector("h5").innerText;
 
-    // Check if already in wishlist
+    // Check if already exists in wishlist
 
     const exists = wishlist.find(
 
@@ -353,56 +384,51 @@ heartButtons.forEach((heart) => {
 
         // Check if product already exists
 
-       const existingIndex = wishlist.findIndex(
+        const existingIndex = wishlist.findIndex(
 
-    item => item.name === product.name
+            item => item.name === product.name
 
-);
+        );
 
-if (existingIndex === -1) {
+        // Add to wishlist
 
-    wishlist.push(product);
+        if (existingIndex === -1) {
 
-    localStorage.setItem("wishlist", JSON.stringify(wishlist));
+            wishlist.push(product);
 
-    if (wishlistCount) {
+            localStorage.setItem("wishlist", JSON.stringify(wishlist));
 
-        wishlistCount.innerText = wishlist.length;
+            updateWishlistBadge();
 
-    }
+            heart.classList.remove("bi-heart");
 
-    heart.classList.remove("bi-heart");
+            heart.classList.add("bi-heart-fill");
 
-    heart.classList.add("bi-heart-fill");
+            heart.classList.add("active");
 
-    heart.classList.add("active");
+            showToast(`${product.name} added to wishlist ❤️`);
 
-    showToast(`${product.name} added to wishlist ❤️`);
+        }
 
-}
+        // Remove from wishlist
 
-else {
+        else {
 
-    wishlist.splice(existingIndex, 1);
+            wishlist.splice(existingIndex, 1);
 
-    localStorage.setItem("wishlist", JSON.stringify(wishlist));
+            localStorage.setItem("wishlist", JSON.stringify(wishlist));
 
-    if (wishlistCount) {
+            updateWishlistBadge();
 
-        wishlistCount.innerText = wishlist.length;
+            heart.classList.remove("bi-heart-fill");
 
-    }
+            heart.classList.add("bi-heart");
 
-    heart.classList.remove("bi-heart-fill");
+            heart.classList.remove("active");
 
-    heart.classList.add("bi-heart");
+            showToast(`${product.name} removed from wishlist 💔`);
 
-    heart.classList.remove("active");
-
-    showToast(`${product.name} removed from wishlist 💔`);
-
-}
-  
+        }
 
     });
 
